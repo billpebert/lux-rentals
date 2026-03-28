@@ -1,0 +1,33 @@
+/* Inter — variable (opsz, wght). Static cuts live under /public/assets/fonts/Inter/static/ if needed. */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/public/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/public/assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+/* Epilogue — variable (wght). Static cuts live under /public/assets/fonts/Epilogue/static/ if needed. */
+@font-face {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/public/assets/fonts/Epilogue/Epilogue-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/public/assets/fonts/Epilogue/Epilogue-Italic-VariableFont_wght.ttf') format('truetype');
+}
