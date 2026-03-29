@@ -1,22 +1,37 @@
+@props(['title' => null, 'heading' => null, 'cardWidth' => 'w-[455px]'])
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
     </head>
-    <body class="min-h-screen bg-white antialiased dark:bg-linear-to-b dark:from-neutral-950 dark:to-neutral-900">
-        <div class="bg-background flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
-            <div class="flex w-full max-w-sm flex-col gap-2">
-                <a href="{{ route('home') }}" class="flex flex-col items-center gap-2 font-medium" wire:navigate>
-                    <span class="flex h-9 w-9 mb-1 items-center justify-center rounded-md">
-                        <x-app-logo-icon class="size-9 fill-current text-black dark:text-white" />
-                    </span>
-                    <span class="sr-only">{{ config('app.name', 'Laravel') }}</span>
-                </a>
-                <div class="flex flex-col gap-6">
-                    {{ $slot }}
+    <body class="antialiased">
+        @include('partials.navbar')
+        <div class="relative min-h-screen flex items-center justify-center overflow-hidden px-[140px] py-[50px]">
+
+            {{-- Background --}}
+            <img src="{{ asset('assets/images/bg-auth.webp') }}" alt="" class="absolute inset-0 size-full object-cover pointer-events-none" />
+            <div class="absolute inset-0 bg-black/80"></div>
+
+            {{-- Content --}}
+            <div class="relative z-10 flex flex-col gap-[60px] items-center w-[979px]">
+
+                <h1 class="font-heading font-black text-[72px] leading-[85px] tracking-[-2.3px] uppercase text-[#e9e9e9] text-center">
+                    {{ filled($heading ?? null) ? $heading : config('app.name') }}
+                </h1>
+
+                {{-- Form Card --}}
+                <div @class(['bg-white border border-[rgba(35,38,46,0.1)] rounded-[15px] p-6', $cardWidth])>
+                    <div class="flex flex-col gap-4 p-4">
+                        {{ $slot }}
+                    </div>
                 </div>
+
             </div>
         </div>
+
+        @include('partials.footer')
+
         @fluxScripts
     </body>
 </html>

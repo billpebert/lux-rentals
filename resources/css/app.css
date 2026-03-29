@@ -14,7 +14,7 @@
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-heading: 'Epilogue', ui-serif, system-ui, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-    --color-zinc-50: #fafafa;
+    /* --color-zinc-50: #fafafa;
     --color-zinc-100: #f5f5f5;
     --color-zinc-200: #e5e5e5;
     --color-zinc-300: #d4d4d4;
@@ -24,7 +24,7 @@
     --color-zinc-700: #404040;
     --color-zinc-800: #26251d;
     --color-zinc-900: #171717;
-    --color-zinc-950: #0a0a0a;
+    --color-zinc-950: #0a0a0a; */
 
     --color-light-gold: #CDB560;
     --color-dark-gold: #916527;
@@ -34,8 +34,10 @@
     --color-accent-foreground: var(--color-zinc-800);
 
     --spacing-desktop: 1440px;
+    --spacing-desktop-lg: 1600px;
 
     --breakpoint-2xl: var(--spacing-desktop);
+    --breakpoint-3xl: var(--spacing-desktop-lg);
 
     /* Font size */
     --text-2xs: 10px;
@@ -52,12 +54,24 @@
 
 @layer base {
 
+    [x-cloak] {
+        display: none !important;
+    }
+
     *,
     ::after,
     ::before,
     ::backdrop,
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
+    }
+
+    a, button {
+        @apply cursor-pointer transition-all duration-300;
+    }
+
+    img {
+        @apply text-2xs;
     }
 }
 
@@ -72,11 +86,19 @@
 input:focus[data-flux-control],
 textarea:focus[data-flux-control],
 select:focus[data-flux-control] {
-    @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
+    @apply outline-hidden ring-2 ring-accent;
 }
 
 @utility container {
-    @apply max-w-desktop mx-auto px-2.5 sm:px-4 lg:px-20;
+    @apply max-w-desktop-lg mx-auto px-2.5 sm:px-4 lg:px-20;
+}
+
+@utility stretched-link {
+    @apply after:absolute after:inset-0 after:content-[''] after:z-10 after:cursor-pointer;
+}
+
+[data-flux-radio-pills], [data-flux-option] {
+    @apply cursor-pointer;
 }
 
 /* \[:where(&)\]:size-4 {

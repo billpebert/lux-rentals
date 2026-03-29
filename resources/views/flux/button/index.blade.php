@@ -115,7 +115,7 @@ $classes = Flux::classes()
     })
     ->add(match ($variant) { // Border color...
         'primary' => 'border border-black/10 dark:border-0',
-        'outline' => 'border border-zinc-200 hover:border-zinc-200 border-b-zinc-300/80 dark:border-zinc-600 dark:hover:border-zinc-600',
+        'outline' => 'border border-zinc-800 hover:border-zinc-400 dark:border-zinc-600 dark:hover:border-zinc-600',
         'outline-primary' => 'border border-[var(--color-accent)] hover:border-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] dark:border-[var(--color-accent)] dark:hover:border-[var(--color-accent)]',
          default => '',
     })

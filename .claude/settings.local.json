@@ -4,7 +4,8 @@
       "mcp__claude_ai_Figma__get_design_context",
       "mcp__laravel-boost__search-docs",
       "Bash(php artisan:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(vendor/bin/pint resources/views/pages/public/car-hire/booking.blade.php --format agent 2>&1)"
     ]
   },
   "enableAllProjectMcpServers": true,
