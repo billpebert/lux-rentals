@@ -5,7 +5,16 @@
       "mcp__laravel-boost__search-docs",
       "Bash(php artisan:*)",
       "Bash(ls:*)",
-      "Bash(vendor/bin/pint resources/views/pages/public/car-hire/booking.blade.php --format agent 2>&1)"
+      "Bash(vendor/bin/pint resources/views/pages/public/car-hire/booking.blade.php --format agent 2>&1)",
+      "mcp__claude_ai_Figma__get_screenshot",
+      "Bash(vendor/bin/pint resources/views/pages/dashboard/customer/index/index.php --format agent 2>&1)",
+      "mcp__laravel-boost__get-absolute-url",
+      "mcp__laravel-boost__last-error",
+      "mcp__laravel-boost__browser-logs",
+      "mcp__laravel-boost__read-log-entries",
+      "Bash(curl:*)",
+      "Bash(vendor/bin/pint routes/web.php --format agent 2>&1)",
+      "Bash(php:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

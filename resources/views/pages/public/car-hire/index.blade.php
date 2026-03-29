@@ -56,6 +56,7 @@ new #[Layout('layouts.public')] class extends Component
         return $all;
     }
 
+    // For testing purposes
     #[Computed]
     public function carsPaginator(): LengthAwarePaginator
     {

@@ -43,9 +43,9 @@ $fleetShowcaseCards = [
         </div>
 
         {{-- Cars grid --}}
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1320px] items-center w-full justify-center">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-5 max-w-[1320px] items-center w-full justify-center">
             @foreach ($fleetShowcaseCards as $card)
-                <a href="#" class="relative rounded-xl h-[398px] flex items-end p-5 overflow-hidden shrink-0">
+                <a href="#" class="relative rounded-xl max-sm:aspect-[3/4] sm:h-[398px] flex items-end p-3 sm:p-5 overflow-hidden shrink-0">
                     <img
                         src="{{ asset('assets/images/'.$card['image']) }}"
                         alt="{{ $card['title'] }}"
@@ -54,7 +54,7 @@ $fleetShowcaseCards = [
                     {{-- overlay gradient --}}
                     <div class="absolute inset-0 bg-linear-to-b from-transparent from-23% to-black to-88%"></div>
                     <div class="w-full flex flex-col gap-2 relative z-10">
-                        <h3 class="font-heading font-semibold text-lg leading-snug sm:text-xl sm:leading-8 lg:text-2xl lg:leading-9 tracking-[-0.4px] text-white sm:whitespace-nowrap">
+                        <h3 class="font-heading font-semibold text-base leading-snug sm:text-xl sm:leading-8 lg:text-2xl lg:leading-9 tracking-[-0.4px] text-white sm:whitespace-nowrap">
                             {{ $card['title'] }}
                         </h3>
                         @if (filled($card['body'] ?? null))

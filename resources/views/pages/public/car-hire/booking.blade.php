@@ -59,31 +59,29 @@ new #[Layout('layouts.public')] class extends Component
 ?>
 
 <div>
+    {{-- Hero --}}
+    <section class="relative flex flex-col items-start justify-end min-h-[min(100dvh,480px)] sm:min-h-[560px] lg:min-h-[600px] pb-8 sm:pb-12 md:pb-[45px] overflow-hidden">
+        <img src="{{ asset('assets/images/bg-car-hire.webp') }}" alt="" class="absolute inset-0 size-full object-cover pointer-events-none" />
+        <div class="absolute inset-0 bg-black/80"></div>
+        <div class="container relative z-10 w-full">
+            <div class="relative z-10 flex flex-col gap-3 sm:gap-4 items-start max-w-[979px]" data-aos="fade-up" data-aos-duration="750">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">Sports</p>
+                <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase text-[#e9e9e9]">
+                    BMW X5 M-Sport
+                </h1>
+                <flux:button href="#gallery" variant="primary" icon="image" class="w-full sm:w-auto justify-center">
+                    Car Gallery
+                </flux:button>
+            </div>
+        </div>
+    </section>
 
     {{-- ==============================
          STEP 1: Car Detail + Booking Form
          ============================== --}}
     @if ($step === 1)
-
-        {{-- Hero --}}
-        <section class="relative flex flex-col items-start justify-end min-h-[min(100dvh,480px)] sm:min-h-[560px] lg:min-h-[600px] pb-8 sm:pb-12 md:pb-[45px] overflow-hidden">
-            <img src="{{ asset('assets/images/bg-car-hire.webp') }}" alt="" class="absolute inset-0 size-full object-cover pointer-events-none" />
-            <div class="absolute inset-0 bg-black/80"></div>
-            <div class="container relative z-10 w-full">
-                <div class="relative z-10 flex flex-col gap-3 sm:gap-4 items-start max-w-[979px]" data-aos="fade-up" data-aos-duration="750">
-                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">Sports</p>
-                    <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase text-[#e9e9e9]">
-                        BMW X5 M-Sport
-                    </h1>
-                    <flux:button href="#gallery" variant="primary" icon="image" class="w-full sm:w-auto justify-center">
-                        Car Gallery
-                    </flux:button>
-                </div>
-            </div>
-        </section>
-
         {{-- Car Detail + Booking Sidebar --}}
-        <section class="flex flex-col xl:flex-row gap-8 xl:gap-[30px] items-start container py-16 sm:py-24 lg:py-[120px] w-full">
+        <section class="flex flex-col xl:flex-row gap-8 xl:gap-[30px] items-start container py-16 sm:py-24 lg:py-[120px] 3xl:px-[140px] w-full">
 
             {{-- Left: Car specs + description --}}
             <div class="w-full xl:w-[790px] xl:max-w-[790px] flex flex-col gap-8 shrink-0 min-w-0" data-aos="fade-up" data-aos-duration="700">
@@ -107,7 +105,7 @@ new #[Layout('layouts.public')] class extends Component
                 </div>
 
                 {{-- Availability Notice --}}
-                <div class="bg-[#f3f4f6] rounded-[14px] px-5 py-[14px] flex items-start gap-6">
+                <div class="bg-[#f3f4f6] rounded-[14px] px-5 py-[14px] flex items-start gap-3 sm:gap-6">
                     <img src="{{ asset('assets/svgs/gold_lantern.svg') }}" alt="Gold Lantern" class="size-6 shrink-0">
                     <p class="font-sans font-medium text-sm leading-[18px] text-[#23262e]">
                         Book this car online now to pick up and drop off at our Autofusion Glasgow branch. For custom pick up and drop off locations, please complete our <a href="{{ route('contact-us') }}" class="underline">contact form</a> to receive a quote.
@@ -281,16 +279,16 @@ new #[Layout('layouts.public')] class extends Component
     @if ($step === 2 || $step === 3)
 
         <section class="bg-white container py-16 sm:py-24 lg:py-[120px] w-full">
-            <div class="flex flex-col gap-6 sm:gap-7 p-4 sm:p-6 lg:p-10">
+            <div class="flex flex-col gap-6 sm:gap-7 sm:p-6 lg:p-10">
 
-                <h1 class="font-heading font-bold text-2xl sm:text-3xl md:text-[36px] leading-tight sm:leading-[45px] tracking-[-1px] text-[#26251D]" data-aos="fade-up" data-aos-duration="700">
+                <h1 class="font-heading font-bold text-2xl sm:text-3xl md:text-[36px] leading-tight sm:leading-[45px] tracking-[-1px] text-[#26251D]" wire:ignore.self data-aos="fade-up" data-aos-duration="700">
                     Please review and confirm your booking
                 </h1>
 
                 <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 items-stretch lg:items-start w-full">
 
                     {{-- Left: Shared Booking Summary --}}
-                    <div class="flex-1 min-w-0 w-full" data-aos="fade-up" data-aos-duration="650">
+                    <div class="flex-1 min-w-0 w-full" wire:ignore.self data-aos="fade-up" data-aos-duration="650">
                         <x-public.booking-summary
                             vehicle="BMW X5 M-Sport"
                             pickup-location="Autofusion Glasgow"
@@ -307,7 +305,7 @@ new #[Layout('layouts.public')] class extends Component
                     @if ($step === 2)
 
                         {{-- Step 2: Licence Verification --}}
-                        <div class="w-full max-w-[472px] shrink-0 mx-auto lg:mx-0 bg-white border border-[rgba(35,38,46,0.1)] rounded-[15px] overflow-hidden" data-aos="fade-up" data-aos-delay="80" data-aos-duration="650">
+                        <div class="w-full max-w-[472px] shrink-0 mx-auto lg:mx-0 bg-white border border-[rgba(35,38,46,0.1)] rounded-[15px] overflow-hidden">
                             <div class="flex flex-col gap-4 p-4">
 
                                 {{-- Header --}}
@@ -360,7 +358,7 @@ new #[Layout('layouts.public')] class extends Component
                     @else
 
                         {{-- Step 3: Payment --}}
-                        <div class="w-full max-w-[455px] shrink-0 mx-auto lg:mx-0 bg-white border border-[rgba(35,38,46,0.1)] rounded-[15px] overflow-hidden" data-aos="fade-up" data-aos-delay="80" data-aos-duration="650">
+                        <div class="w-full max-w-[455px] shrink-0 mx-auto lg:mx-0 bg-white border border-[rgba(35,38,46,0.1)] rounded-[15px] overflow-hidden">
                             <div class="flex flex-col gap-4 p-4">
 
                                 {{-- Header --}}

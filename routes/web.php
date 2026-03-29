@@ -20,7 +20,12 @@ Route::view('/chauffeur-service', 'pages.public.services.chauffeur-service')->na
 Route::view('/corporate-car-hire', 'pages.public.services.corporate-car-hire')->name('corporate-car-hire');
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::view('dashboard', 'dashboard')->name('dashboard');
+    Route::view('/admin/dashboard', 'dashboard')->name('dashboard');
+});
+
+// CUSTOMER DASHBOARD
+Route::prefix('dashboard')->name('dashboard.')->middleware(['auth', 'verified'])->group(function () {
+    Route::livewire('/', 'pages::dashboard.customer.index')->name('index');
 });
 
 require __DIR__.'/settings.php';
