@@ -101,7 +101,7 @@ new #[Layout('layouts.public')] class extends Component
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-[30px] items-stretch w-full">
                     @foreach ($row as $post)
                         <article
-                            class="flex flex-col gap-5 items-start min-w-0 w-full"
+                            class="flex flex-col relative gap-5 items-start min-w-0 w-full"
                             data-aos="fade-up"
                             data-aos-delay="{{ $rowIndex * 120 + $loop->index * 70 }}"
                             data-aos-duration="650"
@@ -119,7 +119,7 @@ new #[Layout('layouts.public')] class extends Component
                                 <a
                                     href="{{ route('blog.show', Str::slug($post['title'])) }}"
                                     wire:navigate
-                                    class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-light-gold underline hover:text-dark-gold"
+                                    class="font-sans stretched-link font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-light-gold underline hover:text-dark-gold"
                                 >
                                     Read more
                                 </a>

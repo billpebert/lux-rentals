@@ -33,17 +33,17 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
     ];
 @endphp
 
-<div class="flex flex-col gap-4 sm:gap-[60px]">
+<div class="flex flex-col gap-4 sm:gap-10 lg:gap-[60px]">
 
     {{-- Breadcrumb --}}
     <div class="flex items-center gap-2">
         <img src="{{ asset('assets/svgs/gold_lantern.svg') }}" alt="" class="size-5" aria-hidden="true">
-        <nav class="flex items-center gap-1 font-sans text-base leading-[27px] tracking-[-0.3px]" aria-label="Breadcrumb">
-            <a href="{{ route('dashboard.customer.index') }}" wire:navigate class="text-light-gold hover:text-light-gold/80 transition-colors">
+        <nav class="flex items-center gap-1 font-sans text-sm sm:text-base leading-[27px] tracking-[-0.3px] min-w-0" aria-label="Breadcrumb">
+            <a href="{{ route('dashboard.customer.index') }}" wire:navigate class="text-light-gold hover:text-light-gold/80 transition-colors shrink-0">
                 {{ __('Account') }}
             </a>
-            <span class="text-white/60">&nbsp;/&nbsp;</span>
-            <span class="text-white/90">{{ $booking['id'] }} ({{ $booking['status'] }})</span>
+            <span class="text-white/60 shrink-0">&nbsp;/&nbsp;</span>
+            <span class="text-white/90 truncate">{{ $booking['id'] }} ({{ $booking['status'] }})</span>
         </nav>
     </div>
 
@@ -55,7 +55,7 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
 
         {{-- Section: The Vehicle --}}
         <div class="flex flex-col gap-8">
-            <h1 class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+            <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
                 {{ __('The Vehicle') }}
             </h1>
 
@@ -140,7 +140,7 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
             <div class="flex flex-col gap-4">
 
                 {{-- Header row --}}
-                <div class="flex items-center justify-between font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
+                <div class="flex items-center justify-between font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
                     <span>{{ __('Item') }}</span>
                     <span>{{ __('Price') }}</span>
                 </div>
@@ -155,16 +155,16 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
                     ['label' => 'Auto Savings (Multi Day Hire)', 'value' => $booking['savings']],
                 ] as $row)
                     <div class="flex flex-col gap-2">
-                        <div class="flex items-start sm:items-center justify-between gap-4 font-sans text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
+                        <div class="flex flex-wrap items-start sm:items-center justify-between gap-4 font-sans text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
                             <span class="font-bold shrink-0">{{ $row['label'] }}</span>
-                            <span class="font-normal text-right">{{ $row['value'] }}</span>
+                            <span class="font-normal text-right max-sm:text-left">{{ $row['value'] }}</span>
                         </div>
                         <hr class="border-white/20">
                     </div>
                 @endforeach
 
                 {{-- Total --}}
-                <div class="flex items-center justify-between font-sans font-bold text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
+                <div class="flex items-center justify-between font-sans font-bold text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
                     <span>{{ __('Total') }}</span>
                     <span>{{ $booking['total'] }}</span>
                 </div>
@@ -175,18 +175,18 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
         {{-- Section: The Location --}}
         <div class="flex flex-col gap-4">
 
-            <h2 class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+            <h2 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
                 {{ __('The Location') }}
             </h2>
 
             <div class="font-sans text-[#e9e9e9]">
-                <span class="font-bold text-lg leading-[27px] tracking-[-0.3px]">{{ __('Full Address:') }}</span>
-                <span class="font-normal text-base leading-6 tracking-[-0.3px]"> {{ $booking['address'] }}</span>
+                <span class="font-bold text-base sm:text-lg leading-[27px] tracking-[-0.3px]">{{ __('Full Address:') }}</span>
+                <span class="font-normal text-sm sm:text-base leading-6 tracking-[-0.3px]"> {{ $booking['address'] }}</span>
             </div>
 
             {{-- Map placeholder --}}
             <div class="w-full h-[252px] rounded-lg overflow-hidden border border-white/10 bg-zinc-900 flex items-center justify-center">
-                <p class="font-sans text-sm text-white/40">{{ $booking['address'] }}</p>
+                <p class="font-sans text-sm text-white/40 text-center">{{ $booking['address'] }}</p>
             </div>
 
         </div>

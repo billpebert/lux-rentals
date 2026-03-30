@@ -52,7 +52,7 @@ new #[Layout('layouts.customer')] #[Title('Manage Bookings')] class extends Comp
     {{-- Breadcrumb --}}
     <div class="flex items-center gap-2">
         <img src="{{ asset('assets/svgs/gold_lantern.svg') }}" alt="" class="size-5" aria-hidden="true">
-        <nav class="flex items-center gap-1 font-sans text-base leading-[27px] tracking-[-0.3px]" aria-label="Breadcrumb">
+        <nav class="flex items-center gap-1 font-sans text-sm sm:text-base leading-[27px] tracking-[-0.3px]" aria-label="Breadcrumb">
             <a href="{{ route('dashboard.customer.index') }}" wire:navigate class="text-light-gold hover:text-light-gold/80 transition-colors">
                 {{ __('Account') }}
             </a>
@@ -74,7 +74,7 @@ new #[Layout('layouts.customer')] #[Title('Manage Bookings')] class extends Comp
                 role="tab"
                 aria-selected="{{ $activeTab === $key ? 'true' : 'false' }}"
                 @class([
-                    'flex items-center justify-center px-4 py-2.5 rounded-full font-sans font-medium text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
+                    'flex items-center justify-center px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
                     'bg-light-gold text-zinc-800' => $activeTab === $key,
                     'text-[#e9e9e9] hover:text-white' => $activeTab !== $key,
                 ])
@@ -90,7 +90,7 @@ new #[Layout('layouts.customer')] #[Title('Manage Bookings')] class extends Comp
         style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);"
         role="tabpanel"
     >
-        <h1 class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+        <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
             {{ $current['title'] }}
         </h1>
 
@@ -121,7 +121,7 @@ new #[Layout('layouts.customer')] #[Title('Manage Bookings')] class extends Comp
 
                         {{-- Price + CTA --}}
                         <div class="flex items-center justify-between">
-                            <p class="font-sans font-semibold text-lg leading-[1.6] text-white whitespace-nowrap">
+                            <p class="font-sans font-semibold text-base sm:text-lg leading-[1.6] text-white whitespace-nowrap">
                                 {{ $booking['price'] }}
                             </p>
                             @if ($booking['cta'] === 'View')

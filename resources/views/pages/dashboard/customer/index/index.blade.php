@@ -37,7 +37,7 @@
     {{-- Breadcrumb --}}
     <div class="flex items-center gap-2">
         <img src="{{ asset('assets/svgs/gold_lantern.svg') }}" alt="" class="size-5">
-        <nav class="flex items-center gap-1 font-sans text-base leading-[27px] tracking-[-0.3px]" aria-label="Breadcrumb">
+        <nav class="flex items-center gap-1 font-sans text-sm sm:text-base leading-[27px] tracking-[-0.3px]" aria-label="Breadcrumb">
             <a href="{{ route('dashboard.customer.index') }}" wire:navigate class="text-light-gold hover:text-light-gold/80 transition-colors">
                 {{ __('Account') }}
             </a>
@@ -48,7 +48,7 @@
 
     {{-- Tab pills --}}
     <div
-        class="inline-flex items-center p-1 rounded-full backdrop-blur-[5px] w-fit"
+        class="inline-flex items-center p-1 rounded-full backdrop-blur-[5px] w-full sm:w-fit overflow-x-auto"
         style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);"
         role="tablist"
     >
@@ -56,7 +56,7 @@
             wire:click="setTab('bookings')"
             role="tab"
             @class([
-                'flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full font-sans font-medium text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
+                'flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
                 'bg-light-gold text-zinc-800' => $activeTab === 'bookings',
                 'text-[#e9e9e9] hover:text-white' => $activeTab !== 'bookings',
             ])
@@ -67,7 +67,7 @@
             wire:click="setTab('id-docs')"
             role="tab"
             @class([
-                'flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full font-sans font-medium text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
+                'flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
                 'bg-light-gold text-zinc-800' => $activeTab === 'id-docs',
                 'text-[#e9e9e9] hover:text-white' => $activeTab !== 'id-docs',
             ])
@@ -84,7 +84,7 @@
             style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);"
             role="tabpanel"
         >
-            <h1 class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+            <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
                 {{ __('Bookings') }}
             </h1>
 
@@ -115,7 +115,7 @@
 
                             {{-- Price + CTA --}}
                             <div class="flex items-center justify-between">
-                                <p class="font-sans font-semibold text-lg leading-[1.6] text-white whitespace-nowrap">
+                                <p class="font-sans font-semibold text-base sm:text-lg leading-[1.6] text-white whitespace-nowrap">
                                     {{ $booking['price'] }}
                                 </p>
                                 <button
@@ -161,7 +161,7 @@
 
                 {{-- Instructions --}}
                 <div class="flex flex-col gap-6">
-                    <p class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
+                    <p class="font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
                         {{ __('Securely upload ID documents below if requested. We currently accept the following formats:') }}
                     </p>
                     <ul class="list-disc pl-6 font-sans text-base leading-6 text-white space-y-1">
@@ -177,7 +177,7 @@
                 {{-- Required documents + uploaded docs table --}}
                 <div class="flex flex-col gap-6">
                     <div class="font-sans text-[#e9e9e9]">
-                        <p class="font-medium text-lg leading-[27px] mb-2">{{ __('Required documents:') }}</p>
+                        <p class="font-medium text-base sm:text-lg leading-[27px] mb-2">{{ __('Required documents:') }}</p>
                         <ul class="list-disc pl-6 text-base leading-6 space-y-1">
                             <li>{{ __('Driving Licence (Front & Back)') }}</li>
                             <li>{{ __('Proof of Address - Dated within the last 3 months (Utility Bill - Gas/Water/Electricity/Council Tax Bill or Bank Statement)') }}</li>
@@ -211,7 +211,7 @@
 
                 {{-- Choose Document Type --}}
                 <flux:field>
-                    <flux:label class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
+                    <flux:label class="font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
                         {{ __('Choose Document Type (required)') }}
                     </flux:label>
                     <flux:select>
