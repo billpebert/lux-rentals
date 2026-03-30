@@ -16,7 +16,9 @@
       "Bash(vendor/bin/pint routes/web.php --format agent 2>&1)",
       "Bash(php:*)",
       "Bash(vendor/bin/pint resources/views/pages/dashboard/customer/bookings/manage-bookings.blade.php --format agent 2>&1)",
-      "Bash(vendor/bin/pint --dirty --format agent 2>&1)"
+      "Bash(vendor/bin/pint --dirty --format agent 2>&1)",
+      "Bash(grep -roh '\\\\\\(text\\\\|bg\\\\|border\\\\|ring\\\\|fill\\\\|stroke\\\\|shadow\\\\|from\\\\|to\\\\|via\\\\|placeholder\\\\|decoration\\\\|outline\\\\|accent\\\\|caret\\\\|divide\\\\\\)\\\\-\\\\[#[0-9a-fA-F]\\\\{3,8\\\\}\\\\]' /Users/bilpo/Herd/lux-rentals/resources/views/)",
+      "Bash(grep -rho '\\\\\\(text\\\\|bg\\\\|border\\\\|ring\\\\|fill\\\\|stroke\\\\|placeholder\\\\\\)-\\\\[#[0-9a-fA-F]\\\\{3,8\\\\}\\\\]' /Users/bilpo/Herd/lux-rentals/resources/views/components/public/ /Users/bilpo/Herd/lux-rentals/resources/views/pages/ /Users/bilpo/Herd/lux-rentals/resources/views/partials/)"
     ]
   },
   "enableAllProjectMcpServers": true,

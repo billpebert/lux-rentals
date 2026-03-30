@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Laravel\Fortify\Features;
 
 // Single file livewire component
 Route::livewire('/', 'pages::public.homepage')->name('home');
@@ -30,6 +31,20 @@ Route::prefix('dashboard')->name('dashboard.customer.')->middleware(['auth', 've
     Route::livewire('/bookings', 'pages::dashboard.customer.bookings.manage-bookings')->name('bookings');
     Route::livewire('/bookings/past', 'pages::dashboard.customer.bookings.past-bookings')->name('bookings.past');
     Route::livewire('/subscriptions', 'pages::dashboard.customer.subscriptions.manage-subscriptions')->name('subscriptions');
+
+    // Customer account settings (same Livewire pages as /settings/*; shell layout switches in layouts/settings.blade.php)
+    Route::livewire('/settings/profile', 'pages::settings.profile')->name('settings.profile');
+    Route::livewire('/settings/appearance', 'pages::settings.appearance')->name('settings.appearance');
+    Route::livewire('/settings/security', 'pages::settings.security')
+        ->middleware(
+            when(
+                Features::canManageTwoFactorAuthentication()
+                    && Features::optionEnabled(Features::twoFactorAuthentication(), 'confirmPassword'),
+                ['password.confirm'],
+                [],
+            ),
+        )
+        ->name('settings.security');
 });
 
 require __DIR__.'/settings.php';

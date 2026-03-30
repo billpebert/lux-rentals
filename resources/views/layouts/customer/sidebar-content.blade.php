@@ -65,12 +65,12 @@
 
     {{-- Settings --}}
     <a
-        href="{{ route('profile.edit') }}"
+        href="{{ route('dashboard.customer.settings.profile') }}"
         wire:navigate
         @class([
             'flex items-center gap-4 px-4 py-[18px] rounded-lg font-sans font-semibold text-base leading-6 tracking-[-0.3px] transition-colors',
-            'bg-light-gold text-zinc-800' => request()->routeIs('profile.edit'),
-            'text-[#e9e9e9] hover:bg-white/10' => ! request()->routeIs('profile.edit'),
+            'bg-light-gold text-zinc-800' => request()->routeIs('dashboard.customer.settings.*'),
+            'text-[#e9e9e9] hover:bg-white/10' => ! request()->routeIs('dashboard.customer.settings.*'),
         ])
     >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-[18px] shrink-0" aria-hidden="true">
