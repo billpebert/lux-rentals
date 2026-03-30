@@ -17,12 +17,12 @@
 <nav class="flex flex-col gap-2" aria-label="Customer dashboard">
     {{-- Dashboard --}}
     <a
-        href="{{ route('dashboard.index') }}"
+        href="{{ route('dashboard.customer.index') }}"
         wire:navigate
         @class([
             'flex items-center gap-4 px-4 py-[18px] rounded-lg font-sans font-semibold text-base leading-6 tracking-[-0.3px] transition-colors',
-            'bg-light-gold text-zinc-800' => request()->routeIs('dashboard.index'),
-            'text-[#e9e9e9] hover:bg-white/10' => ! request()->routeIs('dashboard.index'),
+            'bg-light-gold text-zinc-800' => request()->routeIs('dashboard.customer.index'),
+            'text-[#e9e9e9] hover:bg-white/10' => ! request()->routeIs('dashboard.customer.index'),
         ])
     >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="currentColor" class="size-[18px] shrink-0" aria-hidden="true">
@@ -33,10 +33,12 @@
 
     {{-- Manage Subscriptions --}}
     <a
-        href="#"
+        href="{{ route('dashboard.customer.subscriptions') }}"
+        wire:navigate
         @class([
             'flex items-center gap-4 px-4 py-[18px] rounded-lg font-sans font-semibold text-base leading-6 tracking-[-0.3px] transition-colors',
-            'text-[#e9e9e9] hover:bg-white/10',
+            'bg-light-gold text-zinc-800' => request()->routeIs('dashboard.customer.subscriptions'),
+            'text-[#e9e9e9] hover:bg-white/10' => ! request()->routeIs('dashboard.customer.subscriptions'),
         ])
     >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-[18px] shrink-0" aria-hidden="true">
@@ -47,10 +49,12 @@
 
     {{-- Manage Bookings --}}
     <a
-        href="#"
+        href="{{ route('dashboard.customer.bookings') }}"
+        wire:navigate
         @class([
             'flex items-center gap-4 px-4 py-[18px] rounded-lg font-sans font-semibold text-base leading-6 tracking-[-0.3px] transition-colors',
-            'text-[#e9e9e9] hover:bg-white/10',
+            'bg-light-gold text-zinc-800' => request()->routeIs('dashboard.customer.bookings'),
+            'text-[#e9e9e9] hover:bg-white/10' => ! request()->routeIs('dashboard.customer.bookings'),
         ])
     >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-[18px] shrink-0" aria-hidden="true">

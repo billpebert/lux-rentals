@@ -36,21 +36,22 @@
     --spacing-desktop: 1440px;
     --spacing-desktop-lg: 1600px;
 
-    --breakpoint-2xl: var(--spacing-desktop);
-    --breakpoint-3xl: var(--spacing-desktop-lg);
+    /* Breakpoints must use literal lengths: var() in @media (width >= …) breaks Lightning CSS minify. */
+    --breakpoint-2xl: 1440px;
+    --breakpoint-3xl: 1600px;
 
     /* Font size */
     --text-2xs: 10px;
 }
 
 /* Dark mode colors configuration */
-/* @layer theme {
+@layer theme {
     .dark {
-        --color-accent: var(--color-dark-gold-gold);
-        --color-accent-content: var(--color-dark-gold);
-        --color-accent-foreground: var(--color-white);
+        --color-accent: var(--color-light-gold);
+        --color-accent-content: var(--color-light-gold);
+        --color-accent-foreground: var(--color-black);
     }
-} */
+}
 
 @layer base {
 

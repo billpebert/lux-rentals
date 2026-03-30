@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 // Single file livewire component
 Route::livewire('/', 'pages::public.homepage')->name('home');
 Route::livewire('/blog', 'pages::public.blog.index')->name('blog');
+Route::livewire('/blog/{slug}', 'pages::public.blog.show')->name('blog.show');
 Route::livewire('/contact-us', 'pages::public.contact-us')->name('contact-us');
 Route::livewire('/our-fleet', 'pages::public.our-fleet')->name('our-fleet');
 
@@ -24,8 +25,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
 });
 
 // CUSTOMER DASHBOARD
-Route::prefix('dashboard')->name('dashboard.')->middleware(['auth', 'verified'])->group(function () {
+Route::prefix('dashboard')->name('dashboard.customer.')->middleware(['auth', 'verified'])->group(function () {
     Route::livewire('/', 'pages::dashboard.customer.index')->name('index');
+    Route::livewire('/bookings', 'pages::dashboard.customer.bookings.manage-bookings')->name('bookings');
+    Route::livewire('/bookings/past', 'pages::dashboard.customer.bookings.past-bookings')->name('bookings.past');
+    Route::livewire('/subscriptions', 'pages::dashboard.customer.subscriptions.manage-subscriptions')->name('subscriptions');
 });
 
 require __DIR__.'/settings.php';

@@ -14,7 +14,9 @@
       "mcp__laravel-boost__read-log-entries",
       "Bash(curl:*)",
       "Bash(vendor/bin/pint routes/web.php --format agent 2>&1)",
-      "Bash(php:*)"
+      "Bash(php:*)",
+      "Bash(vendor/bin/pint resources/views/pages/dashboard/customer/bookings/manage-bookings.blade.php --format agent 2>&1)",
+      "Bash(vendor/bin/pint --dirty --format agent 2>&1)"
     ]
   },
   "enableAllProjectMcpServers": true,

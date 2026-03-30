@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         @include('partials.head')
     </head>
@@ -17,14 +17,14 @@
                 alt=""
                 class="absolute inset-0 size-full object-cover"
             />
-            <div class="absolute inset-0 bg-black/[0.95]"></div>
+            <div class="absolute inset-0 bg-black/95"></div>
         </div>
 
         {{-- Mobile sidebar backdrop --}}
         <div
             x-show="sidebarOpen"
             x-transition.opacity
-            class="fixed inset-0 z-[60] bg-zinc-950/70 backdrop-blur-sm lg:hidden"
+            class="fixed inset-0 z-60 bg-zinc-950/70 backdrop-blur-sm lg:hidden"
             x-on:click="sidebarOpen = false"
             x-cloak
         ></div>
@@ -38,7 +38,7 @@
             x-transition:leave="transition ease-in duration-150"
             x-transition:leave-start="translate-x-0"
             x-transition:leave-end="-translate-x-full"
-            class="fixed inset-y-0 left-0 z-[70] flex w-[300px] flex-col p-8 pt-[100px] lg:hidden"
+            class="fixed inset-y-0 left-0 z-70 flex w-[300px] flex-col p-8 pt-[100px] lg:hidden"
             style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 100%); backdrop-filter: blur(12px);"
             role="dialog"
             aria-modal="true"

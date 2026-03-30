@@ -10,6 +10,8 @@ new #[Layout('layouts.public')] class extends Component
 ?>
 
 @php
+    use Illuminate\Support\Str;
+
     $blogPosts = [
         [
             'image' => 'dubai-extravagance.webp',
@@ -108,13 +110,17 @@ new #[Layout('layouts.public')] class extends Component
                                 <img src="{{ asset('assets/images/'.$post['image']) }}" alt="{{ $post['title'] }}" class="size-full object-cover" />
                             </div>
                             <div class="flex flex-col gap-4 items-start border-l-2 border-light-gold pl-4 sm:pl-6 w-full">
-                                <h3 class="font-heading font-semibold text-lg sm:text-xl md:text-2xl leading-snug sm:leading-[32px] tracking-[-0.5px] text-[#26251D] line-clamp-2">
+                                <h3 class="font-heading font-semibold text-lg sm:text-xl md:text-2xl leading-snug sm:leading-[32px] tracking-[-0.5px] text-[#26251D] line-clamp-1">
                                     {{ $post['title'] }}
                                 </h3>
                                 <p class="font-sans font-normal text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#585d64]">
                                     {{ $post['excerpt'] }}
                                 </p>
-                                <a href="#" class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-light-gold underline hover:text-dark-gold">
+                                <a
+                                    href="{{ route('blog.show', Str::slug($post['title'])) }}"
+                                    wire:navigate
+                                    class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-light-gold underline hover:text-dark-gold"
+                                >
                                     Read more
                                 </a>
                             </div>
