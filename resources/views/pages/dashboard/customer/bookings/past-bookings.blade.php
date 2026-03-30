@@ -55,7 +55,7 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
 
         {{-- Section: The Vehicle --}}
         <div class="flex flex-col gap-8">
-            <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+            <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-off-white">
                 {{ __('The Vehicle') }}
             </h1>
 
@@ -121,7 +121,7 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 shrink-0 text-light-gold" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
                                 </svg>
-                                <span class="font-sans text-sm leading-[22px] tracking-[-0.2px] text-[#e9e9e9]">{{ $extra }}</span>
+                                <span class="font-sans text-sm leading-[22px] tracking-[-0.2px] text-off-white">{{ $extra }}</span>
                             </div>
                         @endforeach
                     </div>
@@ -133,14 +133,14 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
         {{-- Section: The Booking --}}
         <div class="flex flex-col gap-4 p-6 rounded-lg border border-white/20">
 
-            <h2 class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-[#e9e9e9] whitespace-nowrap">
+            <h2 class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-off-white whitespace-nowrap">
                 {{ __('The Booking') }}
             </h2>
 
             <div class="flex flex-col gap-4">
 
                 {{-- Header row --}}
-                <div class="flex items-center justify-between font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
+                <div class="flex items-center justify-between font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-off-white">
                     <span>{{ __('Item') }}</span>
                     <span>{{ __('Price') }}</span>
                 </div>
@@ -155,7 +155,7 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
                     ['label' => 'Auto Savings (Multi Day Hire)', 'value' => $booking['savings']],
                 ] as $row)
                     <div class="flex flex-col gap-2">
-                        <div class="flex flex-wrap items-start sm:items-center justify-between gap-4 font-sans text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
+                        <div class="flex flex-wrap items-start sm:items-center justify-between gap-4 font-sans text-sm sm:text-base leading-6 tracking-[-0.3px] text-off-white">
                             <span class="font-bold shrink-0">{{ $row['label'] }}</span>
                             <span class="font-normal text-right max-sm:text-left">{{ $row['value'] }}</span>
                         </div>
@@ -164,7 +164,7 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
                 @endforeach
 
                 {{-- Total --}}
-                <div class="flex items-center justify-between font-sans font-bold text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
+                <div class="flex items-center justify-between font-sans font-bold text-sm sm:text-base leading-6 tracking-[-0.3px] text-off-white">
                     <span>{{ __('Total') }}</span>
                     <span>{{ $booking['total'] }}</span>
                 </div>
@@ -175,11 +175,11 @@ new #[Layout('layouts.customer')] #[Title('Booking Details')] class extends Comp
         {{-- Section: The Location --}}
         <div class="flex flex-col gap-4">
 
-            <h2 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+            <h2 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-off-white">
                 {{ __('The Location') }}
             </h2>
 
-            <div class="font-sans text-[#e9e9e9]">
+            <div class="font-sans text-off-white">
                 <span class="font-bold text-base sm:text-lg leading-[27px] tracking-[-0.3px]">{{ __('Full Address:') }}</span>
                 <span class="font-normal text-sm sm:text-base leading-6 tracking-[-0.3px]"> {{ $booking['address'] }}</span>
             </div>

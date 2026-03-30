@@ -7,7 +7,7 @@
 
             {{-- Email Address --}}
             <flux:field>
-                <flux:label for="email" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">{{ __('Email Address') }}</flux:label>
+                <flux:label for="email" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">{{ __('Email Address') }}</flux:label>
                 <flux:input
                     id="email"
                     variant="filled"
@@ -23,7 +23,7 @@
 
             {{-- Password --}}
             <flux:field>
-                <flux:label for="password" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">{{ __('Password') }}</flux:label>
+                <flux:label for="password" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">{{ __('Password') }}</flux:label>
                 <flux:input
                     id="password"
                     variant="filled"
@@ -41,7 +41,7 @@
                 <flux:checkbox name="remember" :label="__('Remember Me')" :checked="old('remember')" />
 
                 @if (Route::has('password.request'))
-                    <a href="{{ route('password.request') }}" class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[#6b7280] hover:text-[#26251D] transition-colors">
+                    <a href="{{ route('password.request') }}" class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-muted-gray hover:text-charcoal transition-colors">
                         {{ __('Forgot password?') }}
                     </a>
                 @endif
@@ -54,7 +54,7 @@
         </form>
 
         @if (Route::has('register'))
-            <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[#6b7280]">
+            <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-muted-gray">
                 {{ __("Don't have an account yet?") }}
                 <a href="{{ route('register') }}" class="font-semibold hover:text-light-gold transition-colors">{{ __('Register') }}</a>
             </p>

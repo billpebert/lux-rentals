@@ -92,12 +92,12 @@ new #[Layout('layouts.public')] class extends Component
         content-max-class="max-w-[979px]"
         section-class="min-h-[480px] sm:min-h-[600px]"
     >
-        <div class="flex flex-col gap-6 sm:gap-10 items-start text-[#e9e9e9] w-full">
+        <div class="flex flex-col gap-6 sm:gap-10 items-start text-off-white w-full">
             <div class="flex flex-col gap-4 items-start w-full max-w-[979px]" data-aos="fade-up" data-aos-duration="750">
                 <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight md:leading-[1.05] xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase w-full">
                     Book Your Favourite Car
                 </h1>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] w-full text-[#e9e9e9]/95">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] w-full text-off-white/95">
                     Our highly trained Chauffeur drivers combine expert driving skills, local knowledge and attention to detail so that you travel safely, smoothly and luxuriously.
                 </p>
             </div>
@@ -108,22 +108,22 @@ new #[Layout('layouts.public')] class extends Component
                         <flux:input
                             wire:model="dateFrom"
                             type="date"
-                            class="min-w-0 flex-1 bg-white! border-[#e9e9e9]! text-[#26251d]! shadow-none! rounded-lg! placeholder:text-[#7d7d7d]!"
+                            class="min-w-0 flex-1 bg-white! border-off-white! text-charcoal! shadow-none! rounded-lg! placeholder:text-mid-gray!"
                         />
                         <flux:input
                             wire:model="dateTo"
                             type="date"
-                            class="min-w-0 flex-1 bg-white! border-[#e9e9e9]! text-[#26251d]! shadow-none! rounded-lg! placeholder:text-[#7d7d7d]!"
+                            class="min-w-0 flex-1 bg-white! border-off-white! text-charcoal! shadow-none! rounded-lg! placeholder:text-mid-gray!"
                         />
                     </div>
-                    <flux:select wire:model.live="pickupTime" class="min-w-[120px] w-auto bg-white! border-[#e9e9e9]! text-[#26251d]! shadow-none! rounded-lg!">
+                    <flux:select wire:model.live="pickupTime" class="min-w-[120px] w-auto bg-white! border-off-white! text-charcoal! shadow-none! rounded-lg!">
                         <flux:select.option value="08:00">08:00</flux:select.option>
                         <flux:select.option value="09:00">09:00</flux:select.option>
                         <flux:select.option value="10:00">10:00</flux:select.option>
                         <flux:select.option value="12:00">12:00</flux:select.option>
                         <flux:select.option value="15:00">15:00</flux:select.option>
                     </flux:select>
-                    <flux:select wire:model.live="carType" placeholder="Any Type" class="min-w-[140px] flex-1 bg-white! border-[#e9e9e9]! text-[#26251d]! shadow-none! rounded-lg!">
+                    <flux:select wire:model.live="carType" placeholder="Any Type" class="min-w-[140px] flex-1 bg-white! border-off-white! text-charcoal! shadow-none! rounded-lg!">
                         <flux:select.option value="sports">Sports</flux:select.option>
                         <flux:select.option value="prestige">Prestige Sedan</flux:select.option>
                         <flux:select.option value="luxury">Luxury</flux:select.option>
@@ -131,13 +131,13 @@ new #[Layout('layouts.public')] class extends Component
                     </flux:select>
                 </div>
                 <div class="flex flex-wrap gap-3 items-center w-full">
-                    <flux:select wire:model.live="location" placeholder="Any Location" class="min-w-[180px] flex-1 bg-white! border-[#e9e9e9]! text-[#26251d]! shadow-none! rounded-lg!">
+                    <flux:select wire:model.live="location" placeholder="Any Location" class="min-w-[180px] flex-1 bg-white! border-off-white! text-charcoal! shadow-none! rounded-lg!">
                         <flux:select.option value="glasgow">Glasgow</flux:select.option>
                         <flux:select.option value="edinburgh">Edinburgh</flux:select.option>
                         <flux:select.option value="london">London</flux:select.option>
                         <flux:select.option value="manchester">Manchester</flux:select.option>
                     </flux:select>
-                    <flux:select wire:model.live="sort" class="w-full min-[480px]:w-[192px] shrink-0 bg-white! border-[#e9e9e9]! text-[#26251d]! shadow-none! rounded-lg!">
+                    <flux:select wire:model.live="sort" class="w-full min-[480px]:w-[192px] shrink-0 bg-white! border-off-white! text-charcoal! shadow-none! rounded-lg!">
                         <flux:select.option value="price_low">Price Low to High</flux:select.option>
                         <flux:select.option value="price_high">Price High to Low</flux:select.option>
                         <flux:select.option value="name">Name A-Z</flux:select.option>
@@ -153,7 +153,7 @@ new #[Layout('layouts.public')] class extends Component
     {{-- Fleet grid --}}
     <section class="bg-white flex flex-col gap-6 sm:gap-8 items-start container py-16 sm:py-24 lg:py-[120px] w-full">
         <div class="flex items-center justify-between w-full max-w-[1320px] mx-auto px-1" data-aos="fade-up" data-aos-duration="700">
-            <p class="font-heading font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] leading-tight lg:leading-[56px] tracking-[-1px] text-[#26251d]">
+            <p class="font-heading font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] leading-tight lg:leading-[56px] tracking-[-1px] text-charcoal">
                 {{ $this->carsPaginator->total() }} Cars Available
             </p>
         </div>
@@ -185,11 +185,11 @@ new #[Layout('layouts.public')] class extends Component
                                             {{ $car['name'] }}
                                         </h2>
                                         <div class="flex items-center justify-between gap-4 w-full whitespace-nowrap">
-                                            <span class="font-sans font-medium text-lg leading-[27px] text-[#5e5e5e]">
+                                            <span class="font-sans font-medium text-lg leading-[27px] text-medium-gray">
                                                 {{ $car['category'] }}
                                             </span>
                                             <span class="font-sans font-bold text-xl leading-[30px] text-black">
-                                                £1<span class="font-medium text-lg text-[#5e5e5e]"> /Day</span>
+                                                £1<span class="font-medium text-lg text-medium-gray"> /Day</span>
                                             </span>
                                         </div>
                                     </div>
@@ -197,7 +197,7 @@ new #[Layout('layouts.public')] class extends Component
                                         href="{{ route('car-hire.booking', ['slug' => $car['slug']]) }}"
                                         variant="outline"
                                         icon:trailing="arrow-up-right"
-                                        class="w-full! border-[#26251D]! text-[#26251D]! hover:bg-[#26251D]/5! px-6! py-[18px]! font-medium! tracking-[-0.3px]!"
+                                        class="w-full! border-charcoal! text-charcoal! hover:bg-charcoal/5! px-6! py-[18px]! font-medium! tracking-[-0.3px]!"
                                     >
                                         Select
                                     </flux:button>

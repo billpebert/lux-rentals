@@ -83,11 +83,11 @@ new #[Layout('layouts.public')] class extends Component
         overlay-class="bg-black/80"
         section-class="min-h-[min(100dvh,420px)] sm:min-h-[514px]"
     >
-        <div class="flex flex-col gap-4 sm:gap-5 items-start text-[#e9e9e9]" data-aos="fade-up" data-aos-duration="750">
+        <div class="flex flex-col gap-4 sm:gap-5 items-start text-off-white" data-aos="fade-up" data-aos-duration="750">
             <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight md:leading-[1.05] xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase max-w-[864px]">
                 The Art Of Driving Luxury
             </h1>
-            <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-[#e9e9e9]/95">
+            <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-off-white/95">
                 Insights, guides, and stories from the world of prestige car hire — curated for those who expect the extraordinary.
             </p>
         </div>
@@ -106,14 +106,14 @@ new #[Layout('layouts.public')] class extends Component
                             data-aos-delay="{{ $rowIndex * 120 + $loop->index * 70 }}"
                             data-aos-duration="650"
                         >
-                            <div class="w-full min-h-[200px] sm:min-h-[240px] h-[220px] sm:h-[280px] rounded-2xl overflow-hidden bg-[#d9d9d9]">
+                            <div class="w-full min-h-[200px] sm:min-h-[240px] h-[220px] sm:h-[280px] rounded-2xl overflow-hidden bg-placeholder">
                                 <img src="{{ asset('assets/images/'.$post['image']) }}" alt="{{ $post['title'] }}" class="size-full object-cover" />
                             </div>
                             <div class="flex flex-col gap-4 items-start border-l-2 border-light-gold pl-4 sm:pl-6 w-full">
-                                <h3 class="font-heading font-semibold text-lg sm:text-xl md:text-2xl leading-snug sm:leading-[32px] tracking-[-0.5px] text-[#26251D] line-clamp-1">
+                                <h3 class="font-heading font-semibold text-lg sm:text-xl md:text-2xl leading-snug sm:leading-[32px] tracking-[-0.5px] text-charcoal line-clamp-1">
                                     {{ $post['title'] }}
                                 </h3>
-                                <p class="font-sans font-normal text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#585d64]">
+                                <p class="font-sans font-normal text-sm sm:text-base leading-6 tracking-[-0.3px] text-body-gray">
                                     {{ $post['excerpt'] }}
                                 </p>
                                 <a
@@ -140,7 +140,7 @@ new #[Layout('layouts.public')] class extends Component
 
     {{-- Corporate CTA --}}
     <section class="flex flex-col items-start px-4 sm:px-8 lg:px-20 pb-16 sm:pb-24 lg:pb-[120px] w-full">
-        <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
+        <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
             <div class="flex flex-col gap-4 sm:gap-5 items-center text-white text-center px-2">
                 <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize w-full max-w-[864px]">
                     Experience Corporate Luxury Like Never Before

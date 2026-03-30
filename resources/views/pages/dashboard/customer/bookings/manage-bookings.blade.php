@@ -76,7 +76,7 @@ new #[Layout('layouts.customer')] #[Title('Manage Bookings')] class extends Comp
                 @class([
                     'flex items-center justify-center px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
                     'bg-light-gold text-zinc-800' => $activeTab === $key,
-                    'text-[#e9e9e9] hover:text-white' => $activeTab !== $key,
+                    'text-off-white hover:text-white' => $activeTab !== $key,
                 ])
             >
                 {{ $tab['label'] }}
@@ -90,7 +90,7 @@ new #[Layout('layouts.customer')] #[Title('Manage Bookings')] class extends Comp
         style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);"
         role="tabpanel"
     >
-        <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+        <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-off-white">
             {{ $current['title'] }}
         </h1>
 
@@ -147,7 +147,7 @@ new #[Layout('layouts.customer')] #[Title('Manage Bookings')] class extends Comp
             </div>
         @else
             {{-- Empty state --}}
-            <p class="font-sans font-bold text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
+            <p class="font-sans font-bold text-base leading-6 tracking-[-0.3px] text-off-white">
                 {{ $current['empty'] }}
             </p>
         @endif

@@ -5,12 +5,12 @@
         overlay-class="bg-black/80"
         content-max-class="max-w-[797px]"
     >
-        <div class="flex flex-col gap-6 sm:gap-10 items-start text-[#e9e9e9] w-full">
+        <div class="flex flex-col gap-6 sm:gap-10 items-start text-off-white w-full">
             <div class="flex flex-col gap-4 items-start w-full" data-aos="fade-up" data-aos-duration="750">
                 <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight md:leading-[1.05] xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase w-full">
                     Luxury Chauffeur Service In The UK, On Time, Every Time
                 </h1>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] w-full max-w-[746px] text-[#e9e9e9]/95">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] w-full max-w-[746px] text-off-white/95">
                     Our highly trained Chauffeur drivers combine expert driving skills, local knowledge and attention to detail so that you travel safely, smoothly and luxuriously.
                 </p>
             </div>
@@ -42,7 +42,7 @@
     {{-- Why choose our chauffeur hire --}}
     <section class="bg-white flex flex-col items-center container py-16 sm:py-24 lg:py-[120px] w-full">
         <div class="flex flex-col gap-10 sm:gap-[60px] items-center justify-center w-full">
-            <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#26251D] text-center w-full max-w-[900px] px-2" data-aos="fade-up" data-aos-duration="700">
+            <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-charcoal text-center w-full max-w-[900px] px-2" data-aos="fade-up" data-aos-duration="700">
                 Why Choose Our Chauffeur Hire Service
             </h2>
 
@@ -73,10 +73,10 @@
             </div>
 
             <div class="flex flex-col gap-6 sm:gap-8 items-start w-full max-w-[652px] order-1 lg:order-2" data-aos="fade-up" data-aos-duration="700">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                     The Experience That Sets Us Apart
                 </h2>
-                <div class="flex flex-col gap-4 items-start text-[#585d64] font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] w-full">
+                <div class="flex flex-col gap-4 items-start text-body-gray font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] w-full">
                     <p class="w-full">
                         Our chauffeur drivers are trained to anticipate your needs, offer local insights and ensure you travel with complete safety and peace of mind. From the moment you step into one of our prestige vehicles for rent, you can relax, enjoy the surroundings and let us handle the rest.
                     </p>
@@ -96,15 +96,15 @@
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start w-full">
             <div class="flex flex-col gap-10 sm:gap-[60px] items-start w-full max-w-[628px] lg:flex-1" data-aos="fade-up" data-aos-duration="700">
                 <div class="flex flex-col gap-4 items-start w-full">
-                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                         Perfect For Every Occasion
                     </h2>
-                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] max-w-[587px] w-full">
+                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray max-w-[587px] w-full">
                         No two journeys are the same, and neither are our chauffeur services. From the bride's big entrance to a CEO's important meeting, our chauffeur drivers adapt and tailor to every single detail so seamlessly that you won't even notice they're there, as if they're simply a part of the day, not a hired presence.
                     </p>
                 </div>
                 <div class="flex flex-col gap-6 sm:gap-8 items-start w-full">
-                    <h3 class="font-heading font-bold text-xl sm:text-2xl md:text-[32px] leading-tight sm:leading-[42px] tracking-[-0.5px] text-[#26251D] w-full max-w-[518px]">
+                    <h3 class="font-heading font-bold text-xl sm:text-2xl md:text-[32px] leading-tight sm:leading-[42px] tracking-[-0.5px] text-charcoal w-full max-w-[518px]">
                         Events We Cover:
                     </h3>
                     <ul class="flex flex-col gap-4 sm:gap-5 items-start list-none p-0 m-0 w-full">
@@ -117,7 +117,7 @@
                         ] as $line)
                             <li class="flex gap-3 items-start w-full">
                                 <img src="{{ asset('assets/svgs/gold_lantern.svg') }}" alt="" class="size-6 shrink-0 mt-0.5" />
-                                <span class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#26251D] flex-1 min-w-0">
+                                <span class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-charcoal flex-1 min-w-0">
                                     {{ $line }}
                                 </span>
                             </li>
@@ -156,10 +156,10 @@
                 />
             </div>
             <div class="flex flex-col gap-6 sm:gap-8 items-start w-full max-w-[652px]" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                     Travel Like The VIP You Are
                 </h2>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full">
                     Step into your married life, seal a business deal, or just travel in style with a chauffeur-driven luxury car because you deserve it.
                 </p>
                 <flux:button href="{{ route('contact-us') }}" variant="primary" class="w-full sm:w-auto justify-center">
@@ -171,7 +171,7 @@
 
     {{-- Final CTA --}}
     <section class="bg-white flex flex-col items-start px-4 sm:px-8 lg:px-20 pb-16 sm:pb-24 lg:pb-[120px] w-full">
-        <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
+        <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
             <div class="flex flex-col gap-4 sm:gap-5 items-center text-white text-center max-w-[900px] px-2">
                 <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize w-full">
                     Make Your Event More Than A Date On The Calendar

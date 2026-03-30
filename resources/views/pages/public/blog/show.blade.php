@@ -33,8 +33,8 @@ new #[Layout('layouts.public')] #[Title('Blog')] class extends Component
         overlay-class="bg-black/70"
         section-class="min-h-[min(100dvh,420px)] sm:min-h-[514px]"
     >
-        <div class="flex flex-col gap-4 sm:gap-5 items-start text-[#e9e9e9]" data-aos="fade-up" data-aos-duration="750">
-            <div class="flex items-center gap-3 font-sans text-sm leading-6 tracking-[-0.3px] text-[#e9e9e9]/70">
+        <div class="flex flex-col gap-4 sm:gap-5 items-start text-off-white" data-aos="fade-up" data-aos-duration="750">
+            <div class="flex items-center gap-3 font-sans text-sm leading-6 tracking-[-0.3px] text-off-white/70">
                 <span>{{ $post['date'] }}</span>
                 <span>&middot;</span>
                 <span>{{ $post['author'] }}</span>
@@ -48,13 +48,13 @@ new #[Layout('layouts.public')] #[Title('Blog')] class extends Component
     {{-- Article content --}}
     <section class="bg-white w-full">
         <div class="container py-16 sm:py-24 lg:py-[120px]">
-            <div class="max-w-[820px] mx-auto flex flex-col gap-6 font-sans text-base leading-relaxed tracking-[-0.3px] text-[#26251D]">
+            <div class="max-w-[820px] mx-auto flex flex-col gap-6 font-sans text-base leading-relaxed tracking-[-0.3px] text-charcoal">
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In part, that's because it's a common issue that naturally happens to prestige vehicles throughout the year, usually from a combination of high-performance driving, road conditions, and the demands of luxury hire. Here's what typically contributes:
                 </p>
 
-                <ul class="list-disc pl-6 space-y-1.5 text-[#585d64]">
+                <ul class="list-disc pl-6 space-y-1.5 text-body-gray">
                     <li>Hitting kerbs, potholes, or speed bumps, especially at speed.</li>
                     <li>Road traffic incidents and unforeseen collisions.</li>
                     <li>Suspension modifications made without proper recalibration.</li>
@@ -77,7 +77,7 @@ new #[Layout('layouts.public')] #[Title('Blog')] class extends Component
                     Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint.
                 </p>
 
-                <ul class="list-disc pl-6 space-y-1.5 text-[#585d64]">
+                <ul class="list-disc pl-6 space-y-1.5 text-body-gray">
                     <li>Your steering response feels sharper and more immediate than any standard hire.</li>
                     <li>The vehicle's tyres maintain even contact across the full width of the tread.</li>
                     <li>There is no unusual vibration transmitted through the wheel at motorway speeds.</li>
@@ -114,7 +114,7 @@ new #[Layout('layouts.public')] #[Title('Blog')] class extends Component
 
     {{-- Back to blog CTA --}}
     <section class="flex flex-col items-start px-4 sm:px-8 lg:px-20 pb-16 sm:pb-24 lg:pb-[120px] w-full">
-        <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
+        <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
             <div class="flex flex-col gap-4 sm:gap-5 items-center text-white text-center px-2">
                 <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize w-full max-w-[864px]">
                     Explore More From Our Blog

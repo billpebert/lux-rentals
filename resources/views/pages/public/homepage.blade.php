@@ -13,11 +13,11 @@ new #[Layout('layouts.public')] class extends Component
 
     {{-- Hero Section --}}
     <x-public.hero-section image="{{ asset('assets/images/bg-homepage-default.webp') }}">
-        <div class="flex flex-col gap-4 sm:gap-5 items-start text-[#e9e9e9]" data-aos="fade-up" data-aos-duration="750">
+        <div class="flex flex-col gap-4 sm:gap-5 items-start text-off-white" data-aos="fade-up" data-aos-duration="750">
             <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight md:leading-[1.05] xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase max-w-[864px]">
                 Luxury Car Hire In The UK, Redefined
             </h1>
-            <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-[#e9e9e9]/95">
+            <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-off-white/95">
                 Think Dubai's supercar culture and world-class service right here in the UK. We deliver an
                 unparalleled standard of prestige car hire backed by an exclusive fleet.
             </p>
@@ -36,13 +36,13 @@ new #[Layout('layouts.public')] class extends Component
             {{-- Left: text content --}}
             <div class="flex flex-col gap-8 sm:gap-10 items-start shrink-0 w-full xl:max-w-[628px]" data-aos="fade-up" data-aos-duration="700">
                 <div class="flex flex-col gap-6 sm:gap-8 items-start w-full max-w-full">
-                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                         Dubai Extravagance, Now In The UK
                     </h2>
-                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full max-w-[587px]">
+                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full max-w-[587px]">
                         For almost half a decade, Lux Rentals has been setting the standard for luxury car hire in Dubai. Now, we're bringing the same legacy to the UK with a fleet of world-class supercars, sedans and SUVs rarely seen on UK roads paired with an unparalleled VVIP experience.
                     </p>
-                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full max-w-[587px]">
+                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full max-w-[587px]">
                         Whether you want to make an entrance at your wedding, impress VIPs at your corporate event, or simply indulge in the thrill of driving a world-class sports car, our luxury car rental fleet is waiting to make you feel truly grand.
                     </p>
                 </div>
@@ -89,9 +89,9 @@ new #[Layout('layouts.public')] class extends Component
     @endphp
 
     {{-- White-Glove Service Section --}}
-    <div class="bg-[#F8F8F8]">
+    <div class="bg-near-white">
         <section class="flex flex-col gap-10 sm:gap-[60px] items-center container py-16 sm:py-24 lg:py-[120px] w-full rounded-2xl sm:rounded-[30px]">
-            <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#26251D] w-full text-center sm:text-start" data-aos="fade-up" data-aos-duration="700">
+            <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-charcoal w-full text-center sm:text-start" data-aos="fade-up" data-aos-duration="700">
                 White-Glove Service
             </h2>
 
@@ -111,7 +111,7 @@ new #[Layout('layouts.public')] class extends Component
 
     {{-- Drive Luxury, Live Prestige — Services Section --}}
     <section class="flex flex-col items-start px-4 sm:px-8 lg:px-20 w-full">
-        <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full">
+        <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full">
 
             <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-white w-full text-center lg:text-start" data-aos="fade-up" data-aos-duration="700">
                 Drive Luxury, Live Prestige
@@ -197,10 +197,10 @@ new #[Layout('layouts.public')] class extends Component
 
             {{-- Header --}}
             <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 lg:gap-8 w-full" data-aos="fade-up" data-aos-duration="700">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full lg:max-w-[859px]">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full lg:max-w-[859px]">
                     Why Choose Our Luxury Car Rentals In the UK?
                 </h2>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full lg:max-w-[358px] lg:shrink-0">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full lg:max-w-[358px] lg:shrink-0">
                     We have a proven track record of delivering quality service and an outstanding fleet to match.
                 </p>
             </div>
@@ -219,10 +219,10 @@ new #[Layout('layouts.public')] class extends Component
                         <div class="w-px min-h-[6rem] sm:h-[124px] self-stretch sm:self-auto bg-light-gold shrink-0"></div>
 
                         <div class="flex flex-col gap-4 items-start flex-1 min-w-0">
-                            <h3 class="font-heading font-semibold text-lg sm:text-xl md:text-2xl leading-snug sm:leading-9 tracking-[-0.4px] text-[#181818]">
+                            <h3 class="font-heading font-semibold text-lg sm:text-xl md:text-2xl leading-snug sm:leading-9 tracking-[-0.4px] text-near-black">
                                 {{ $feature['title'] }}
                             </h3>
-                            <p class="font-sans font-normal text-xs sm:text-sm md:text-base leading-relaxed sm:leading-6 tracking-[-0.3px] text-[#7b7b7b]">
+                            <p class="font-sans font-normal text-xs sm:text-sm md:text-base leading-relaxed sm:leading-6 tracking-[-0.3px] text-mid-gray">
                                 {{ $feature['body'] }}
                             </p>
                         </div>

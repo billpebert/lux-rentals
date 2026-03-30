@@ -2,20 +2,20 @@
 
     {{-- Hero Section --}}
     <x-public.hero-section image="{{ asset('assets/images/bg-homepage-default.webp') }}">
-        <div class="flex flex-col gap-4 sm:gap-5 w-full items-start text-[#e9e9e9]" data-aos="fade-up" data-aos-duration="750">
+        <div class="flex flex-col gap-4 sm:gap-5 w-full items-start text-off-white" data-aos="fade-up" data-aos-duration="750">
             <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight md:leading-[1.05] xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase w-full max-w-[864px]">
                 We Deliver Phenomenal Car Rental Experiences
             </h1>
-            <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-[#e9e9e9]/95">
+            <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-off-white/95">
                 Lux Rentals has built its name on prestige car hire, exceptional service, and a fleet that turns heads wherever it goes.
             </p>
         </div>
     </x-public.hero-section>
 
     {{-- Stats — Our Fleet, Our Expertise, Our Promise --}}
-    <div class="bg-[#F8F8F8]">
+    <div class="bg-near-white">
         <section class="flex flex-col items-start container py-16 sm:py-24 lg:py-[120px] w-full">
-            <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full">
+            <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full">
 
                 <h2 class="font-heading font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] leading-tight lg:leading-[56px] tracking-[-1px] text-white text-center px-2 lg:whitespace-nowrap" data-aos="fade-up" data-aos-duration="700">
                     Our Fleet, Our Expertise, Our Promise
@@ -50,10 +50,10 @@
 
             {{-- Left: text --}}
             <div class="flex flex-col gap-6 sm:gap-8 items-start shrink-0 w-full xl:max-w-[628px] order-1" data-aos="fade-up" data-aos-duration="700">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                     Bringing Dubai Luxury to the UK
                 </h2>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full max-w-[587px]">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full max-w-[587px]">
                     What makes us different? We're the first company to bring Dubai's iconic luxury supercar culture to Scotland and beyond. That means access to exotic fleet options rarely seen on British roads, paired with the refinement and service that UK clients expect.
                 </p>
             </div>
@@ -72,13 +72,13 @@
 
             {{-- Text first on mobile --}}
             <div class="flex flex-col gap-6 sm:gap-8 items-start shrink-0 w-full xl:max-w-[628px] order-1 xl:order-2" data-aos="fade-up" data-aos-duration="700">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                     Not Just Cars. Connections.
                 </h2>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full max-w-[587px]">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full max-w-[587px]">
                     We know the difference between driving a car and experiencing one. A sports car rental isn't about point A to B; it's about the moment your heart races as the engine starts and the way people turn their heads when you arrive.
                 </p>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full max-w-[587px]">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full max-w-[587px]">
                     We treat every client as part of the Lux Rentals family. Whether you're here for a single day or a long-term arrangement, you'll feel the same attention to detail, the same personal touch, and the same passion for excellence.
                 </p>
             </div>
@@ -92,9 +92,9 @@
     </section>
 
     {{-- A New Standard in Luxury Car Rental — dark card, checklist + image --}}
-    <div class="bg-[#F8F8F8]">
+    <div class="bg-near-white">
         <section class="flex flex-col items-start container py-16 sm:py-24 lg:py-[120px] w-full">
-            <div class="bg-[#26251D] flex flex-col lg:flex-row gap-10 lg:gap-[60px] items-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full">
+            <div class="bg-charcoal flex flex-col lg:flex-row gap-10 lg:gap-[60px] items-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full">
 
                 {{-- Left: heading + checklist --}}
                 <div class="flex flex-col gap-10 sm:gap-[60px] items-start shrink-0 w-full lg:max-w-[654px] lg:flex-1">
@@ -138,10 +138,10 @@
 
             {{-- Left: text --}}
             <div class="flex-1 flex flex-col gap-6 sm:gap-8 items-start w-full max-w-[628px]" data-aos="fade-up" data-aos-duration="700">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                     Driving the Experience Forward
                 </h2>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full max-w-[587px]">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full max-w-[587px]">
                     A great drive is more than horsepower or leather seats. It's the confidence of knowing your car is flawless, the comfort of a team that's always available, and the feeling of being treated like a VIP. That's what makes us the trusted choice for sports car rental and corporate car hire across the UK.
                 </p>
             </div>
@@ -166,10 +166,10 @@
             {{-- Right: text + buttons --}}
             <div class="shrink-0 w-full lg:max-w-[766px] flex flex-col gap-6 sm:gap-8 items-start" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700">
                 <div class="flex flex-col gap-6 sm:gap-8 items-start w-full max-w-[628px]">
-                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                         Our Promise
                     </h2>
-                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full max-w-[587px]">
+                    <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full max-w-[587px]">
                         We want you to feel our passion through our luxuriously maintained rental cars in the UK. Whether it's the growl of a supercar or the quiet elegance of a Bentley with a chauffeur, you'll know you're in good hands.
                     </p>
                 </div>

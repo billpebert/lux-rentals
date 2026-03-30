@@ -71,7 +71,7 @@
 
         {{-- Title --}}
         <div class="flex flex-col gap-2">
-            <flux:label for="title" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+            <flux:label for="title" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                 {{ __('Title (required)') }}
             </flux:label>
             <div class="relative">
@@ -79,13 +79,13 @@
                     id="title"
                     name="title"
                     required
-                    class="w-full h-[60px] bg-[#e9e9e9] rounded-[8px] px-4 pr-10 font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[#6b7280] border-none focus:outline-none focus:ring-2 focus:ring-light-gold appearance-none"
+                    class="w-full h-[60px] bg-off-white rounded-[8px] px-4 pr-10 font-sans font-normal text-base leading-6 tracking-[-0.3px] text-muted-gray border-none focus:outline-none focus:ring-2 focus:ring-light-gold appearance-none"
                 >
                     @foreach(['Mr', 'Mrs', 'Ms', 'Miss', 'Dr', 'Prof'] as $option)
                         <option value="{{ $option }}" {{ old('title') === $option ? 'selected' : '' }}>{{ $option }}</option>
                     @endforeach
                 </select>
-                <svg class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 size-3 text-[#6b7280]" viewBox="0 0 10 6" fill="none">
+                <svg class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 size-3 text-muted-gray" viewBox="0 0 10 6" fill="none">
                     <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
@@ -97,7 +97,7 @@
         {{-- First Name + Last Name --}}
         <div class="flex gap-4">
             <div class="flex-1 flex flex-col gap-2">
-                <flux:label for="first_name" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+                <flux:label for="first_name" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                     {{ __('First Name (required)') }}
                 </flux:label>
                 <flux:input id="first_name" variant="filled" name="first_name" :value="old('first_name')" placeholder="{{ __('First Name') }}" required autofocus autocomplete="given-name" />
@@ -106,7 +106,7 @@
                 @enderror
             </div>
             <div class="flex-1 flex flex-col gap-2">
-                <flux:label for="last_name" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+                <flux:label for="last_name" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                     {{ __('Last Name (required)') }}
                 </flux:label>
                 <flux:input id="last_name" variant="filled" name="last_name" :value="old('last_name')" placeholder="{{ __('Last Name') }}" required autocomplete="family-name" />
@@ -119,7 +119,7 @@
         {{-- Email + Phone --}}
         <div class="flex gap-4">
             <div class="flex-1 flex flex-col gap-2">
-                <flux:label for="email" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+                <flux:label for="email" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                     {{ __('Email Address (Required)') }}
                 </flux:label>
                 <flux:input id="email" variant="filled" name="email" type="email" :value="old('email')" placeholder="email@example.com" required autocomplete="email" />
@@ -128,7 +128,7 @@
                 @enderror
             </div>
             <div class="flex-1 flex flex-col gap-2">
-                <flux:label for="phone" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+                <flux:label for="phone" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                     {{ __('Phone (required)') }}
                 </flux:label>
                 <flux:input id="phone" variant="filled" name="phone" type="tel" :value="old('phone')" placeholder="{{ __('Phone number') }}" required autocomplete="tel" />
@@ -140,7 +140,7 @@
 
         {{-- Date of Birth --}}
         <div class="flex flex-col gap-2">
-            <flux:label for="date_of_birth" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+            <flux:label for="date_of_birth" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                 {{ __('Date of Birth (DD/MM/YYYY) (required)') }}
             </flux:label>
             <flux:input id="date_of_birth" variant="filled" name="date_of_birth" type="date" :value="old('date_of_birth')" required />
@@ -152,7 +152,7 @@
         {{-- Postcode + Look Up --}}
         <div class="flex gap-4 items-end">
             <div class="flex-1 flex flex-col gap-2">
-                <flux:label for="postcode" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+                <flux:label for="postcode" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                     {{ __('Postcode (required)') }}
                 </flux:label>
                 <flux:input id="postcode" variant="filled" name="postcode" :value="old('postcode')" placeholder="{{ __('Postcode') }}" required autocomplete="postal-code" />
@@ -167,7 +167,7 @@
 
         {{-- Password --}}
         <div class="flex flex-col gap-2">
-            <flux:label for="password" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+            <flux:label for="password" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                 {{ __('Password (required)') }}
             </flux:label>
             <flux:input id="password" variant="filled" name="password" type="password" placeholder="{{ __('Password') }}" required autocomplete="new-password" viewable />
@@ -178,7 +178,7 @@
 
         {{-- Confirm Password --}}
         <div class="flex flex-col gap-2">
-            <flux:label for="password_confirmation" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">
+            <flux:label for="password_confirmation" class="font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-charcoal">
                 {{ __('Confirm Password (required)') }}
             </flux:label>
             <flux:input id="password_confirmation" variant="filled" name="password_confirmation" type="password" placeholder="{{ __('Confirm Password') }}" required autocomplete="new-password" viewable />
@@ -205,7 +205,7 @@
     </form>
 
     {{-- Sign in link --}}
-    <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[#6b7280]">
+    <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-muted-gray">
         {{ __('Already have an account?') }}
         <a href="{{ route('login') }}" class="font-semibold hover:text-light-gold transition-colors">{{ __('Sign in') }}</a>
     </p>

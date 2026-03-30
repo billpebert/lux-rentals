@@ -35,11 +35,11 @@ new #[Layout('layouts.public')] class extends Component
 <div>
     {{-- Hero Section --}}
     <x-public.hero-section image="{{ asset('assets/images/bg-our-fleet.webp') }}">
-        <div class="flex flex-col gap-4 sm:gap-6 items-start text-[#e9e9e9]" data-aos="fade-up" data-aos-duration="750">
+        <div class="flex flex-col gap-4 sm:gap-6 items-start text-off-white" data-aos="fade-up" data-aos-duration="750">
             <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight md:leading-[1.05] xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase max-w-[864px]">
                 Hire Exotic Cars That Make A Statement
             </h1>
-            <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-[#e9e9e9]/95">
+            <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-off-white/95">
                 Choose from a luxury car rental collection that is handpicked to deliver prestige, performance and presence.
             </p>
         </div>
@@ -60,10 +60,10 @@ new #[Layout('layouts.public')] class extends Component
             <div class="flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-16 sm:py-24 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full">
 
                 <div class="flex flex-col gap-4 sm:gap-5 items-center text-center w-full px-2" data-aos="fade-up" data-aos-duration="700">
-                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#26251D] w-full">
+                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-charcoal w-full">
                         {{ $section['heading'] }}
                     </h2>
-                    <div class="flex flex-col gap-2 items-center font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] max-w-full">
+                    <div class="flex flex-col gap-2 items-center font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray max-w-full">
                         <p class="w-full max-w-[587px]">{{ $section['tagline'] }}</p>
                         <p class="w-full max-w-[882px]">{{ $section['intro'] }}</p>
                     </div>

@@ -5,12 +5,12 @@
         overlay-class="bg-black/80"
         content-max-class="max-w-[866px]"
     >
-        <div class="flex flex-col gap-6 sm:gap-10 items-start text-[#e9e9e9] w-full">
+        <div class="flex flex-col gap-6 sm:gap-10 items-start text-off-white w-full">
             <div class="flex flex-col gap-4 items-start w-full" data-aos="fade-up" data-aos-duration="750">
                 <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight md:leading-[1.05] xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase w-full">
                     Make A Grand Entrance With Our Event Car Hire Service
                 </h1>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-[#e9e9e9]/95">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-off-white/95">
                     Arrive at glamorous red carpet nights, milestone birthdays, corporate functions and VIP celebrations with our luxury car rentals for events in the UK.
                 </p>
             </div>
@@ -24,7 +24,7 @@
 
     {{-- Collection overview --}}
     <section class="bg-white flex flex-col items-start px-4 sm:px-8 lg:px-20 py-16 sm:py-24 lg:py-[120px] w-full">
-        <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
+        <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
             <div class="flex flex-col items-center text-white text-center max-w-[876px] px-2">
                 <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize w-full">
                     Our Collection Of Luxury Car Hire For Your Event
@@ -71,10 +71,10 @@
             </div>
 
             <div class="flex flex-col gap-6 sm:gap-8 items-start w-full max-w-[652px] shrink-0" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                     Luxury Car Rentals That Elevate Your Occasion
                 </h2>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] w-full">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray w-full">
                     No two events are the same, and neither are our cars. Whether it’s corporate car hire for an awards night, chauffeured transport for a gala, or VIP &amp; celebrity transport with our security fleet hire, our event car hire is all about detail, presence, and making your entrance matter.
                 </p>
                 <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 items-stretch sm:items-center w-full">
@@ -92,17 +92,17 @@
     {{-- Popular picks --}}
     <section class="bg-white flex flex-col gap-10 sm:gap-16 items-center container py-16 sm:py-24 lg:py-[120px] w-full">
         <div class="flex flex-col gap-4 items-center text-center max-w-[894px] px-2" data-aos="fade-up" data-aos-duration="700">
-            <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#26251D] w-full">
+            <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-charcoal w-full">
                 Our Most Popular Event Car Hire Picks
             </h2>
-            <p class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#454545] w-full">
+            <p class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-dark-mid w-full">
                 Our event car hire collection includes some of the most sought-after luxury vehicles in the world. Many hosts choose the timeless presence of a Rolls-Royce or Bentley for galas and black-tie evenings. For group arrivals at concerts, premiers, and celebrations, Range Rovers offer space with sleek luxury. And when you want every head to turn, nothing matches the impact of a Lamborghini or Ferrari on the approach. We have it all.
             </p>
         </div>
 
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center w-full justify-center">
             <div class="flex flex-col gap-8 sm:gap-[60px] items-start w-full max-w-[518px] lg:flex-1" data-aos="fade-up" data-aos-duration="700">
-                <h3 class="font-heading font-bold text-xl sm:text-2xl md:text-[32px] leading-tight sm:leading-[42px] tracking-[-0.5px] text-[#26251D] w-full">
+                <h3 class="font-heading font-bold text-xl sm:text-2xl md:text-[32px] leading-tight sm:leading-[42px] tracking-[-0.5px] text-charcoal w-full">
                     Our Luxury Car Rentals For Your Events Are:
                 </h3>
                 <ul class="flex flex-col gap-4 sm:gap-5 items-start list-none p-0 m-0 w-full">
@@ -114,7 +114,7 @@
                     ] as $item)
                         <li class="flex gap-3 items-start w-full">
                             <img src="{{ asset('assets/svgs/gold_lantern.svg') }}" alt="" class="size-6 shrink-0 mt-0.5" />
-                            <p class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-[#26251D] flex-1 min-w-0">
+                            <p class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-charcoal flex-1 min-w-0">
                                 {{ $item }}
                             </p>
                         </li>
@@ -143,7 +143,7 @@
 
     {{-- Final CTA --}}
     <section class="bg-white flex flex-col items-start px-4 sm:px-8 lg:px-20 pb-16 sm:pb-24 lg:pb-[120px] w-full">
-        <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
+        <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[120px] rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
             <div class="flex flex-col gap-4 sm:gap-5 items-center text-white text-center max-w-[900px] px-2">
                 <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize w-full">
                     Make Your Event More Than A Date On The Calendar

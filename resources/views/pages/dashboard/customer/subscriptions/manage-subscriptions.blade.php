@@ -29,12 +29,12 @@ new #[Layout('layouts.customer')] #[Title('Manage Subscriptions')] class extends
         class="flex flex-col gap-8 p-6 sm:p-[30px] rounded-3xl backdrop-blur-[5px] w-full"
         style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);"
     >
-        <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+        <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-off-white">
             {{ __('Manage Subscriptions') }}
         </h1>
 
         {{-- Empty state --}}
-        <p class="font-sans font-bold text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
+        <p class="font-sans font-bold text-base leading-6 tracking-[-0.3px] text-off-white">
             {{ __('You currently do not have any subscriptions.') }}
         </p>
 

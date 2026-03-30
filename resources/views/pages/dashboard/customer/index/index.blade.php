@@ -58,7 +58,7 @@
             @class([
                 'flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
                 'bg-light-gold text-zinc-800' => $activeTab === 'bookings',
-                'text-[#e9e9e9] hover:text-white' => $activeTab !== 'bookings',
+                'text-off-white hover:text-white' => $activeTab !== 'bookings',
             ])
         >
             {{ __('Bookings') }}
@@ -69,7 +69,7 @@
             @class([
                 'flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] transition-colors whitespace-nowrap',
                 'bg-light-gold text-zinc-800' => $activeTab === 'id-docs',
-                'text-[#e9e9e9] hover:text-white' => $activeTab !== 'id-docs',
+                'text-off-white hover:text-white' => $activeTab !== 'id-docs',
             ])
         >
             {{ __('ID Docs') }}
@@ -84,7 +84,7 @@
             style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);"
             role="tabpanel"
         >
-            <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-[#e9e9e9]">
+            <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-off-white">
                 {{ __('Bookings') }}
             </h1>
 
@@ -132,7 +132,7 @@
             @else
                 {{-- Empty state --}}
                 <div class="flex flex-col gap-4">
-                    <p class="font-sans text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
+                    <p class="font-sans text-base leading-6 tracking-[-0.3px] text-off-white">
                         {{ __('You currently do not have any upcoming bookings.') }}
                     </p>
                 </div>
@@ -161,7 +161,7 @@
 
                 {{-- Instructions --}}
                 <div class="flex flex-col gap-6">
-                    <p class="font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
+                    <p class="font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-off-white">
                         {{ __('Securely upload ID documents below if requested. We currently accept the following formats:') }}
                     </p>
                     <ul class="list-disc pl-6 font-sans text-base leading-6 text-white space-y-1">
@@ -169,14 +169,14 @@
                         <li>PNG</li>
                         <li>PDF</li>
                     </ul>
-                    <p class="font-sans text-base leading-6 tracking-[-0.3px] text-[#e9e9e9]">
+                    <p class="font-sans text-base leading-6 tracking-[-0.3px] text-off-white">
                         {{ __("We recommend using the HP Smart app if you don't have a scanner readily available.") }}
                     </p>
                 </div>
 
                 {{-- Required documents + uploaded docs table --}}
                 <div class="flex flex-col gap-6">
-                    <div class="font-sans text-[#e9e9e9]">
+                    <div class="font-sans text-off-white">
                         <p class="font-medium text-base sm:text-lg leading-[27px] mb-2">{{ __('Required documents:') }}</p>
                         <ul class="list-disc pl-6 text-base leading-6 space-y-1">
                             <li>{{ __('Driving Licence (Front & Back)') }}</li>
@@ -199,7 +199,7 @@
                                 </tr>
                             </thead>
                         </table>
-                        <p class="py-6 font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9] text-center">
+                        <p class="py-6 font-sans font-medium text-lg leading-[27px] tracking-[-0.3px] text-off-white text-center">
                             {{ __('You have not yet uploaded any documents.') }}
                         </p>
                     </div>
@@ -211,7 +211,7 @@
 
                 {{-- Choose Document Type --}}
                 <flux:field>
-                    <flux:label class="font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">
+                    <flux:label class="font-sans font-medium text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-off-white">
                         {{ __('Choose Document Type (required)') }}
                     </flux:label>
                     <flux:select>

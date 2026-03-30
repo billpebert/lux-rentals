@@ -65,8 +65,8 @@ new #[Layout('layouts.public')] class extends Component
         <div class="absolute inset-0 bg-black/80"></div>
         <div class="container relative z-10 w-full">
             <div class="relative z-10 flex flex-col gap-3 sm:gap-4 items-start max-w-[979px]" data-aos="fade-up" data-aos-duration="750">
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#e9e9e9]">Sports</p>
-                <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase text-[#e9e9e9]">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-off-white">Sports</p>
+                <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase text-off-white">
                     BMW X5 M-Sport
                 </h1>
                 <flux:button href="#gallery" variant="primary" icon="image" class="w-full sm:w-auto justify-center">
@@ -94,42 +94,42 @@ new #[Layout('layouts.public')] class extends Component
                         ['icon' => asset('assets/svgs/feature-transmission.svg'), 'label' => 'Transmission', 'value' => 'Auto'],
                         ['icon' => asset('assets/svgs/feature-doors-count.svg'), 'label' => 'Doors count', 'value' => '4'],
                     ] as $feature)
-                        <div class="min-w-0 bg-[#f3f4f6] flex gap-2 sm:gap-3 items-center p-3 sm:p-5 rounded-[13px]">
+                        <div class="min-w-0 bg-light-fill flex gap-2 sm:gap-3 items-center p-3 sm:p-5 rounded-[13px]">
                             <img src="{{ $feature['icon']  }}" alt="{{ $feature['label'] }}">
                             <div class="flex flex-col gap-1">
                                 <p class="font-sans font-medium text-[12px] leading-4 text-[rgba(35,38,46,0.6)]">{{ $feature['label'] }}</p>
-                                <p class="font-sans font-medium text-base leading-6 text-[#23262e]">{{ $feature['value'] }}</p>
+                                <p class="font-sans font-medium text-base leading-6 text-dark-cool">{{ $feature['value'] }}</p>
                             </div>
                         </div>
                     @endforeach
                 </div>
 
                 {{-- Availability Notice --}}
-                <div class="bg-[#f3f4f6] rounded-[14px] px-5 py-[14px] flex items-start gap-3 sm:gap-6">
+                <div class="bg-light-fill rounded-[14px] px-5 py-[14px] flex items-start gap-3 sm:gap-6">
                     <img src="{{ asset('assets/svgs/gold_lantern.svg') }}" alt="Gold Lantern" class="size-6 shrink-0">
-                    <p class="font-sans font-medium text-sm leading-[18px] text-[#23262e]">
+                    <p class="font-sans font-medium text-sm leading-[18px] text-dark-cool">
                         Book this car online now to pick up and drop off at our Autofusion Glasgow branch. For custom pick up and drop off locations, please complete our <a href="{{ route('contact-us') }}" class="underline">contact form</a> to receive a quote.
                     </p>
                 </div>
 
                 {{-- Description --}}
                 <div class="flex flex-col gap-4">
-                    <p class="font-sans font-normal text-base leading-6 text-[#23262e]">
+                    <p class="font-sans font-normal text-base leading-6 text-dark-cool">
                         Introducing the BMW X5 M Sport, available at Autofusion — a dynamic SUV that combines powerful performance, advanced technology, and sophisticated style. Designed for those who value both luxury and versatility, the X5 M Sport delivers an exhilarating drive with all the comforts of a premium interior.
                     </p>
-                    <p class="font-sans font-normal text-base leading-6 text-[#23262e]">
+                    <p class="font-sans font-normal text-base leading-6 text-dark-cool">
                         Ideal for self-drive or chauffeur service, the BMW X5 M Sport is perfect for business, leisure, special events, or family adventures. Drivers must be over the age of 25.
                     </p>
-                    <p class="font-sans font-normal text-base leading-6 text-[#23262e]">
+                    <p class="font-sans font-normal text-base leading-6 text-dark-cool">
                         Powered by a 3.0-liter diesel engine producing 282 horsepower and 650 Nm of torque, the X5 M Sport combines strong acceleration with outstanding fuel efficiency. With advanced all-wheel drive and adaptive suspension, this SUV provides enhanced grip and a smooth drive, adapting seamlessly to various terrains.
                     </p>
-                    <p class="font-sans font-normal text-base leading-6 text-[#23262e]">
+                    <p class="font-sans font-normal text-base leading-6 text-dark-cool">
                         Inside, the X5 M Sport offers a spacious cabin with premium leather seats, an intuitive iDrive infotainment system, and ambient lighting. Additional features include a panoramic sunroof that fills the cabin with natural light, as well as heated front and rear seats for added comfort.
                     </p>
-                    <p class="font-sans font-normal text-base leading-6 text-[#23262e]">
+                    <p class="font-sans font-normal text-base leading-6 text-dark-cool">
                         With its bold design, state-of-the-art technology, and impressive versatility, the BMW X5 M Sport is an outstanding choice for any journey. Rent the BMW X5 M Sport from Autofusion and experience luxury, power, and efficiency in a truly exceptional SUV.
                     </p>
-                    <p class="font-sans font-semibold text-sm leading-5 text-[#23262e] pt-6">
+                    <p class="font-sans font-semibold text-sm leading-5 text-dark-cool pt-6">
                         Follow us on all major social media platforms for weekly deals, exclusive offers and new car updates.
                     </p>
                 </div>
@@ -141,7 +141,7 @@ new #[Layout('layouts.public')] class extends Component
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.39702 0H13.603C14.9213 0 16 1.07866 16 2.39702V13.603C16 14.9213 14.9213 16 13.603 16H2.39702C1.07866 16 0 14.9213 0 13.603V2.39702C0 1.07866 1.07866 0 2.39702 0ZM6.27232 9.36815L11.7854 3.85506C12.0451 3.59542 12.4445 3.59542 12.6843 3.85506L13.4034 4.55419C13.6631 4.81383 13.6631 5.2133 13.4034 5.45312L6.71176 12.1448C6.47207 12.4044 6.07259 12.4044 5.81283 12.1448L2.59676 8.90878C2.33712 8.66909 2.33712 8.26961 2.59676 8.00985L3.29589 7.31071C3.55553 7.05108 3.955 7.05108 4.19482 7.31071L6.27232 9.36815Z" fill="#CDB560"/>
                             </svg>
-                            <span class="font-sans font-medium text-[13px] leading-5 text-[#23262e]">{{ $feature }}</span>
+                            <span class="font-sans font-medium text-[13px] leading-5 text-dark-cool">{{ $feature }}</span>
                         </div>
                     @endforeach
                 </div>
@@ -149,7 +149,7 @@ new #[Layout('layouts.public')] class extends Component
             </div>
 
             {{-- Right: Booking Form Sidebar --}}
-            <div class="flex-1 w-full min-w-0 bg-[#26251D] rounded-[20px] flex flex-col" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700">
+            <div class="flex-1 w-full min-w-0 bg-charcoal rounded-[20px] flex flex-col" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700">
 
                 {{-- Price + Login Warning --}}
                 <div class="px-6 pt-8 pb-4 flex flex-col gap-2">
@@ -164,7 +164,7 @@ new #[Layout('layouts.public')] class extends Component
                 </div>
 
                 {{-- White Form Card --}}
-                <div class="mx-[14px] bg-white border border-[#e1e1e1] rounded-[14px] flex flex-col">
+                <div class="mx-[14px] bg-white border border-border-light rounded-[14px] flex flex-col">
 
                     {{-- Date & Time section --}}
                     <div class="px-5 pt-5 pb-3">
@@ -174,10 +174,10 @@ new #[Layout('layouts.public')] class extends Component
                     {{-- Pickup & Dropoff --}}
                     <div class="px-5 pb-4 flex flex-col gap-2">
                         <flux:field>
-                            <flux:label class="font-sans font-semibold text-sm leading-5 text-[#6b7280]!">Pickup &amp; Dropoff</flux:label>
+                            <flux:label class="font-sans font-semibold text-sm leading-5 text-muted-gray!">Pickup &amp; Dropoff</flux:label>
                             <flux:select
                                 wire:model.live="pickupDropoff"
-                                class="w-full bg-white! border-[#e9e9e9]! text-[#7d7d7d]! shadow-none! rounded-lg! font-sans font-medium text-base leading-6 tracking-[-0.3px]!"
+                                class="w-full bg-white! border-off-white! text-mid-gray! shadow-none! rounded-lg! font-sans font-medium text-base leading-6 tracking-[-0.3px]!"
                             >
                                 <flux:select.option value="16/10/2025 - 19/10/2025">16/10/2025 - 19/10/2025</flux:select.option>
                                 <flux:select.option value="17/10/2025 - 20/10/2025">17/10/2025 - 20/10/2025</flux:select.option>
@@ -190,10 +190,10 @@ new #[Layout('layouts.public')] class extends Component
                     {{-- Pickup Time --}}
                     <div class="px-5 pb-4 flex flex-col gap-2">
                         <flux:field>
-                            <flux:label class="font-sans font-semibold text-sm leading-5 text-[#6b7280]!">Pickup Time</flux:label>
+                            <flux:label class="font-sans font-semibold text-sm leading-5 text-muted-gray!">Pickup Time</flux:label>
                             <flux:select
                                 wire:model.live="pickupTime"
-                                class="w-full bg-white! border-[#e9e9e9]! text-[#7d7d7d]! shadow-none! rounded-lg! font-sans font-medium text-base leading-6 tracking-[-0.3px]!"
+                                class="w-full bg-white! border-off-white! text-mid-gray! shadow-none! rounded-lg! font-sans font-medium text-base leading-6 tracking-[-0.3px]!"
                             >
                                 <flux:select.option value="09:00">09:00</flux:select.option>
                                 <flux:select.option value="10:00">10:00</flux:select.option>
@@ -206,9 +206,9 @@ new #[Layout('layouts.public')] class extends Component
                     </div>
 
                     {{-- Availability Confirmation --}}
-                    <div class="border-b border-[#e1e1e1] px-5 pb-4">
-                        <p class="font-sans text-[12px] leading-4 text-[#6b7280]">
-                            <span class="font-bold text-[#6b7280]">Congrats!</span>
+                    <div class="border-b border-border-light px-5 pb-4">
+                        <p class="font-sans text-[12px] leading-4 text-muted-gray">
+                            <span class="font-bold text-muted-gray">Congrats!</span>
                             <span class="font-medium"> This car is available on the date/time above.</span>
                         </p>
                     </div>
@@ -219,7 +219,7 @@ new #[Layout('layouts.public')] class extends Component
                             <flux:label class="font-sans font-semibold text-sm leading-5 text-[rgba(38,37,29,0.65)]!">Pickup Location</flux:label>
                             <flux:select
                                 wire:model.live="pickupLocation"
-                                class="w-full bg-white! border-[#e9e9e9]! text-[#7d7d7d]! shadow-none! rounded-lg! font-sans font-medium text-base leading-6 tracking-[-0.3px]!"
+                                class="w-full bg-white! border-off-white! text-mid-gray! shadow-none! rounded-lg! font-sans font-medium text-base leading-6 tracking-[-0.3px]!"
                             >
                                 <flux:select.option value="Autofusion Glasgow (Primary)">Autofusion Glasgow (Primary)</flux:select.option>
                                 <flux:select.option value="Autofusion Edinburgh">Autofusion Edinburgh</flux:select.option>
@@ -231,11 +231,11 @@ new #[Layout('layouts.public')] class extends Component
 
                     {{-- Chauffeur Option --}}
                     <div class="px-5 pb-3">
-                        <flux:checkbox wire:model="includeChauffeur" label="INCLUDE A CHAUFFEUR FOR £120/day" class="[&_label]:font-sans [&_label]:text-[12px] [&_label]:uppercase [&_label]:tracking-wide [&_label]:text-[#6b7280]" />
+                        <flux:checkbox wire:model="includeChauffeur" label="INCLUDE A CHAUFFEUR FOR £120/day" class="[&_label]:font-sans [&_label]:text-[12px] [&_label]:uppercase [&_label]:tracking-wide [&_label]:text-muted-gray" />
                     </div>
 
                     {{-- Deposit Note --}}
-                    <div class="border-b border-[#e1e1e1] px-5 pb-4">
+                    <div class="border-b border-border-light px-5 pb-4">
                         <p class="font-sans font-medium text-[12px] leading-4 text-[rgba(38,37,29,0.65)]">
                             No deposit will be required for chauffeur bookings.
                         </p>
@@ -244,7 +244,7 @@ new #[Layout('layouts.public')] class extends Component
                     {{-- Total --}}
                     <div class="px-5 py-4 flex items-center justify-between">
                         <div class="flex flex-col gap-1">
-                            <p class="font-sans font-semibold text-base leading-6 text-[#6b7280]">Total</p>
+                            <p class="font-sans font-semibold text-base leading-6 text-muted-gray">Total</p>
                             <p class="font-sans font-medium text-sm leading-5 text-[rgba(38,37,29,0.65)]">Incl. VAT</p>
                         </div>
                         <p class="font-sans font-semibold text-[26px] leading-[39px] text-dark-gold">£1,100.00</p>
@@ -252,7 +252,7 @@ new #[Layout('layouts.public')] class extends Component
 
                     {{-- Deposit Notice --}}
                     <div class="px-5 pb-5">
-                        <p class="font-sans font-normal text-sm leading-5 text-[#6b7280]">Deposit of £500.00 will be payable in branch.</p>
+                        <p class="font-sans font-normal text-sm leading-5 text-muted-gray">Deposit of £500.00 will be payable in branch.</p>
                     </div>
 
                 </div>
@@ -281,7 +281,7 @@ new #[Layout('layouts.public')] class extends Component
         <section class="bg-white container py-16 sm:py-24 lg:py-[120px] w-full">
             <div class="flex flex-col gap-6 sm:gap-7 sm:p-6 lg:p-10">
 
-                <h1 class="font-heading font-bold text-2xl sm:text-3xl md:text-[36px] leading-tight sm:leading-[45px] tracking-[-1px] text-[#26251D]" wire:ignore.self data-aos="fade-up" data-aos-duration="700">
+                <h1 class="font-heading font-bold text-2xl sm:text-3xl md:text-[36px] leading-tight sm:leading-[45px] tracking-[-1px] text-charcoal" wire:ignore.self data-aos="fade-up" data-aos-duration="700">
                     Please review and confirm your booking
                 </h1>
 
@@ -309,8 +309,8 @@ new #[Layout('layouts.public')] class extends Component
                             <div class="flex flex-col gap-4 p-4">
 
                                 {{-- Header --}}
-                                <div class="border-b border-[#e5e7eb] pb-2 flex flex-col gap-1.5">
-                                    <p class="font-sans font-semibold text-xl leading-[30px] tracking-[-0.3px] text-[#26251D]">
+                                <div class="border-b border-border-subtle pb-2 flex flex-col gap-1.5">
+                                    <p class="font-sans font-semibold text-xl leading-[30px] tracking-[-0.3px] text-charcoal">
                                         Mr Mahmud, let's confirm your details
                                     </p>
                                     <p class="font-sans font-medium text-[12px] leading-4 text-[rgba(35,38,46,0.8)]">
@@ -339,10 +339,10 @@ new #[Layout('layouts.public')] class extends Component
                                 <div class="border-t border-[rgba(35,38,46,0.1)] pt-4 flex flex-col gap-4">
                                     <p class="font-sans font-medium text-sm leading-[22px] tracking-[-0.2px] text-[rgba(35,38,46,0.7)]">
                                         Please copy &amp; paste your DVLA check code here. You can generate a DVLA
-                                        <a href="#" class="underline font-semibold text-[#26251D]">check code here.</a>
+                                        <a href="#" class="underline font-semibold text-charcoal">check code here.</a>
                                     </p>
                                     <p class="font-sans text-sm leading-[22px] tracking-[-0.2px] text-[rgba(35,38,46,0.7)]">
-                                        <span class="font-bold text-[#26251D]">Note:</span>
+                                        <span class="font-bold text-charcoal">Note:</span>
                                         If you hold a non-GB licence, please call us to make a booking.
                                     </p>
                                 </div>
@@ -362,8 +362,8 @@ new #[Layout('layouts.public')] class extends Component
                             <div class="flex flex-col gap-4 p-4">
 
                                 {{-- Header --}}
-                                <div class="border-b border-[#e5e7eb] pb-2 flex flex-col gap-2">
-                                    <p class="font-sans font-semibold text-xl leading-[30px] tracking-[-0.3px] text-[#26251D]">
+                                <div class="border-b border-border-subtle pb-2 flex flex-col gap-2">
+                                    <p class="font-sans font-semibold text-xl leading-[30px] tracking-[-0.3px] text-charcoal">
                                         Please make a payment
                                     </p>
                                     <p class="font-sans font-medium text-[12px] leading-4 text-[rgba(35,38,46,0.8)]">
@@ -389,7 +389,7 @@ new #[Layout('layouts.public')] class extends Component
 
                                 {{-- Licence Validated Notice --}}
                                 <div class="bg-[rgba(205,181,96,0.1)] border-l-4 border-light-gold rounded-[4px] px-5 py-4">
-                                    <p class="font-sans font-bold text-base leading-6 tracking-[-0.3px] text-[#23262e]">
+                                    <p class="font-sans font-bold text-base leading-6 tracking-[-0.3px] text-dark-cool">
                                         Your licence has been successfully validated.
                                     </p>
                                 </div>
@@ -436,7 +436,7 @@ new #[Layout('layouts.public')] class extends Component
 
             {{-- Text --}}
             <div class="flex flex-col gap-2 items-center text-center">
-                <h2 class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-[#26251D]">
+                <h2 class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-charcoal">
                     Payment Successful!
                 </h2>
                 <p class="font-sans font-medium text-[22px] leading-8 tracking-[-0.3px] text-[rgba(38,37,29,0.6)]">

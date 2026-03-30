@@ -30,10 +30,10 @@ $fleetShowcaseCards = [
         {{-- Header row --}}
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-8 w-full">
             <div class="flex flex-col gap-4 items-start w-full max-w-[724px]">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                     Our Exclusive Luxury Car Hire Fleet
                 </h2>
-                <p class="font-sans font-normal text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-[#585d64]">
+                <p class="font-sans font-normal text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-body-gray">
                     Because ordinary simply doesn't exist in our vocabulary.
                 </p>
             </div>

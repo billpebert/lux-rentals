@@ -1,4 +1,4 @@
-<footer class="bg-[#26251D] flex flex-col gap-12 sm:gap-16 lg:gap-20 items-center px-4 sm:px-8 lg:px-20 xl:px-[140px] py-12 sm:py-16 lg:py-20 w-full">
+<footer class="bg-charcoal flex flex-col gap-12 sm:gap-16 lg:gap-20 items-center px-4 sm:px-8 lg:px-20 xl:px-[140px] py-12 sm:py-16 lg:py-20 w-full">
 
     {{-- Main row --}}
     <div class="flex flex-col xl:flex-row xl:items-start xl:justify-between gap-12 xl:gap-8 w-full max-w-desktop-lg mx-auto">

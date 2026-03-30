@@ -29,6 +29,23 @@
     --color-light-gold: #CDB560;
     --color-dark-gold: #916527;
 
+    /* Design system colors */
+    --color-charcoal: #26251d;      /* primary dark warm — headings, dark section bg */
+    --color-off-white: #e9e9e9;     /* light text on dark backgrounds */
+    --color-body-gray: #585d64;     /* body/paragraph text on light bg */
+    --color-deep-navy: #112336;     /* dark navy text */
+    --color-muted-gray: #6b7280;    /* muted secondary text */
+    --color-dark-cool: #23262e;     /* dark cool background */
+    --color-mid-gray: #7d7d7d;      /* medium gray text */
+    --color-medium-gray: #5e5e5e;   /* medium gray text variant */
+    --color-dark-mid: #454545;      /* dark mid gray text */
+    --color-near-black: #181818;    /* near-black text */
+    --color-near-white: #f8f8f8;    /* near-white background */
+    --color-light-fill: #f3f4f6;    /* light section fill */
+    --color-placeholder: #d9d9d9;   /* placeholder / image bg */
+    --color-border-light: #e1e1e1;  /* light border */
+    --color-border-subtle: #e5e7eb; /* subtle border */
+
     --color-accent: var(--color-light-gold);
     --color-accent-content: var(--color-light-gold);
     --color-accent-foreground: var(--color-zinc-800);

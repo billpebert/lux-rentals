@@ -5,12 +5,12 @@
         overlay-class="bg-black/80"
         content-max-class="max-w-[1236px]"
     >
-        <div class="flex flex-col gap-6 sm:gap-10 items-start text-[#e9e9e9] w-full">
+        <div class="flex flex-col gap-6 sm:gap-10 items-start text-off-white w-full">
             <div class="flex flex-col gap-4 items-start w-full" data-aos="fade-up" data-aos-duration="750">
                 <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-[1.1] sm:leading-tight md:leading-[1.05] xl:leading-[85px] tracking-[-0.08em] sm:tracking-[-2.3px] uppercase w-full">
                     Luxury Wedding Car Hires, Designed To Make Your Nuptials Extra Special
                 </h1>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-[#e9e9e9]/95">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-off-white/95">
                     Choose from a fleet of prestige cars and luxury car rental options that transform your big day commute into a statement of elegance.
                 </p>
             </div>
@@ -27,7 +27,7 @@
 
     {{-- Luxury wedding car hire for every style --}}
     <section class="bg-white flex flex-col items-start px-4 sm:px-8 lg:px-20 py-16 sm:py-24 lg:py-[120px] w-full">
-        <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
+        <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
             <div class="flex flex-col gap-4 items-center text-white text-center max-w-[796px] px-2">
                 <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize w-full">
                     Luxury Wedding Car Hire For Every Style
@@ -75,10 +75,10 @@
             </div>
 
             <div class="flex flex-col gap-6 sm:gap-8 items-start w-full max-w-[628px]" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700">
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                     Wedding Chauffeur Service For A Stress-Free Day
                 </h2>
-                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-[#585d64] max-w-[587px] w-full">
+                <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] text-body-gray max-w-[587px] w-full">
                     You have a million things to think about for the big day, and the last thing you need is to worry about the ride. Step into the cool, quiet cabin of a luxury car hire with a professional chauffeur who will lead the perfect arrival and a getaway that feels like the start of your very own fairy tale.
                 </p>
                 <flux:button href="#" variant="primary" class="w-full sm:w-auto justify-center">
@@ -90,7 +90,7 @@
 
     {{-- Popular picks & packages --}}
     <section class="bg-white flex flex-col items-start px-4 sm:px-8 lg:px-20 py-16 sm:py-24 lg:py-[120px] w-full">
-        <div class="bg-[#26251D] flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
+        <div class="bg-charcoal flex flex-col gap-10 sm:gap-[60px] items-center justify-center px-4 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-20 rounded-2xl sm:rounded-[30px] w-full" data-aos="fade-up" data-aos-duration="700">
             <div class="flex flex-col gap-4 items-center text-white text-center max-w-[894px] px-2">
                 <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize w-full">
                     Our Most Popular Wedding Car Hire Picks
@@ -152,10 +152,10 @@
 
             <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-8 w-full">
                 <div class="flex flex-col gap-4 items-start w-full max-w-[724px]" data-aos="fade-up" data-aos-duration="700">
-                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-[#112336] w-full">
+                    <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-deep-navy w-full">
                         Because Ordinary Just Won’t Do
                     </h2>
-                    <p class="font-sans font-normal text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-[#585d64]">
+                    <p class="font-sans font-normal text-base sm:text-lg leading-[27px] tracking-[-0.3px] text-body-gray">
                         On the biggest day of your life, don’t settle for anything less than breathtaking. Choose the perfect wedding car hire to match your perfect day.
                     </p>
                 </div>

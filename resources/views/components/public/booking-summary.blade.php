@@ -14,7 +14,7 @@
     {{-- Vehicle --}}
     <div class="border-b border-[rgba(35,38,46,0.1)] px-4 py-4 flex flex-col gap-1">
         <p class="font-sans font-medium text-base leading-6 tracking-[-0.3px] text-[rgba(35,38,46,0.6)]">Your vehicle</p>
-        <p class="font-sans font-semibold text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">{{ $vehicle }}</p>
+        <p class="font-sans font-semibold text-lg leading-[27px] tracking-[-0.3px] text-charcoal">{{ $vehicle }}</p>
     </div>
 
     {{-- Pickup & Dropoff --}}
@@ -22,13 +22,13 @@
         <div class="flex flex-col sm:flex-row gap-6 sm:gap-10">
             <div class="flex flex-col gap-1">
                 <p class="font-sans font-medium text-base leading-6 tracking-[-0.3px] text-[rgba(35,38,46,0.6)]">Pick Up</p>
-                <p class="font-sans font-semibold text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">{{ $pickupLocation }}</p>
-                <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[#26251D]">{{ $pickupDatetime }}</p>
+                <p class="font-sans font-semibold text-lg leading-[27px] tracking-[-0.3px] text-charcoal">{{ $pickupLocation }}</p>
+                <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-charcoal">{{ $pickupDatetime }}</p>
             </div>
             <div class="flex flex-col gap-1">
                 <p class="font-sans font-medium text-base leading-6 tracking-[-0.3px] text-[rgba(35,38,46,0.6)]">Dropoff</p>
-                <p class="font-sans font-semibold text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">{{ $dropoffLocation }}</p>
-                <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[#26251D]">{{ $dropoffDatetime }}</p>
+                <p class="font-sans font-semibold text-lg leading-[27px] tracking-[-0.3px] text-charcoal">{{ $dropoffLocation }}</p>
+                <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-charcoal">{{ $dropoffDatetime }}</p>
             </div>
         </div>
     </div>
@@ -36,13 +36,13 @@
     {{-- Hire Duration --}}
     <div class="border-b border-[rgba(35,38,46,0.1)] px-4 py-4 flex flex-col gap-1">
         <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[rgba(35,38,46,0.6)]">Hire Duration</p>
-        <p class="font-sans font-semibold text-lg leading-[27px] tracking-[-0.3px] text-[#26251D]">{{ $hireDuration }}</p>
+        <p class="font-sans font-semibold text-lg leading-[27px] tracking-[-0.3px] text-charcoal">{{ $hireDuration }}</p>
     </div>
 
     {{-- Refundable Deposit --}}
     <div class="border-b border-[rgba(35,38,46,0.1)] px-4 py-4 flex flex-col gap-2">
         <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[rgba(35,38,46,0.6)]">Refundable Deposit</p>
-        <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-[#26251D]">{{ $deposit }} Will be payable in branch</p>
+        <p class="font-sans font-normal text-base leading-6 tracking-[-0.3px] text-charcoal">{{ $deposit }} Will be payable in branch</p>
     </div>
 
     {{-- Coupon --}}
@@ -59,7 +59,7 @@
     {{-- Total Due --}}
     <div class="px-4 py-4 flex items-center justify-between">
         <div class="flex flex-col gap-1">
-            <p class="font-heading font-semibold text-2xl leading-9 tracking-[-0.4px] text-[#26251D]">Total Due</p>
+            <p class="font-heading font-semibold text-2xl leading-9 tracking-[-0.4px] text-charcoal">Total Due</p>
             <p class="font-sans font-medium text-sm leading-[22px] tracking-[-0.2px] text-[rgba(35,38,46,0.6)]">Incl. VAT</p>
         </div>
         <p class="font-heading font-bold text-[32px] leading-[42px] tracking-[-0.5px] text-light-gold">{{ $total }}</p>
