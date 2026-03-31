@@ -27,7 +27,7 @@ new #[Layout('layouts.customer')] #[Title('Manage Subscriptions')] class extends
     {{-- Content panel --}}
     <div
         class="flex flex-col gap-8 p-6 sm:p-[30px] rounded-3xl backdrop-blur-[5px] w-full"
-        style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);"
+        style="background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 100%), linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%);"
     >
         <h1 class="font-heading font-bold text-2xl sm:text-[32px] leading-8 sm:leading-[42px] tracking-[-0.5px] text-off-white">
             {{ __('Manage Subscriptions') }}

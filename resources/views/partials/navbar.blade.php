@@ -17,7 +17,7 @@
                 <flux:navbar class="min-w-0 flex-wrap mx-auto justify-end">
                     <flux:navbar.item wire:navigate href="{{ route('home') }}" class="lg:**:data-content:text-base text-white! data-current:text-accent! font-medium! tracking-[-0.3px]!">Home</flux:navbar.item>
                     <flux:navbar.item wire:navigate href="{{ route('about-us') }}" class="lg:**:data-content:text-base text-white! font-medium! data-current:text-accent! tracking-[-0.3px]!">About Us</flux:navbar.item>
-                    <flux:navbar.item wire:navigate href="{{ route('our-fleet') }}" class="lg:**:data-content:text-base text-white! font-medium! data-current:text-accent! tracking-[-0.3px]!">Our Fleet (Cars)</flux:navbar.item>
+                    <flux:navbar.item wire:navigate href="{{ route('our-fleet') }}" class="lg:**:data-content:text-base text-white! font-medium! data-current:text-accent! tracking-[-0.3px]!">Our Fleet</flux:navbar.item>
                     <flux:dropdown>
                         <flux:navbar.item icon:trailing="chevron-down" class="lg:**:data-content:text-base text-white! font-medium! data-current:text-accent! tracking-[-0.3px]!">Services</flux:navbar.item>
                         <flux:navmenu>

@@ -92,11 +92,13 @@
     {{-- Popular picks --}}
     <section class="bg-white flex flex-col gap-10 sm:gap-16 items-center container py-16 sm:py-24 lg:py-[120px] w-full">
         <div class="flex flex-col gap-4 items-center text-center max-w-[894px] px-2" data-aos="fade-up" data-aos-duration="700">
-            <h2 class="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[75px] tracking-[-2.3px] capitalize text-charcoal w-full">
-                Our Most Popular Event Car Hire Picks
+            <h2 class="font-heading font-bold text-3xl lg:text-4xl xl:text-5xl tracking-[-2.3px] capitalize text-charcoal w-full">
+                Here For Your Fundraisers, Anniversaries, Proms, Live Shows, Parties And Everything In Between
             </h2>
             <p class="font-sans font-medium text-sm sm:text-base leading-6 tracking-[-0.3px] text-dark-mid w-full">
-                Our event car hire collection includes some of the most sought-after luxury vehicles in the world. Many hosts choose the timeless presence of a Rolls-Royce or Bentley for galas and black-tie evenings. For group arrivals at concerts, premiers, and celebrations, Range Rovers offer space with sleek luxury. And when you want every head to turn, nothing matches the impact of a Lamborghini or Ferrari on the approach. We have it all.
+                Rent luxury cars for moments that demand classic elegance, others that call for a bold supercar flair or when
+                you need comfort and privacy to take the front seat. Our luxury car hire fleet is designed for flexibility,
+                allowing you to choose your exact dream car for special occasions.
             </p>
         </div>
 

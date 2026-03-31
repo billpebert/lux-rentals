@@ -88,7 +88,8 @@ new #[Layout('layouts.public')] class extends Component
                 The Art Of Driving Luxury
             </h1>
             <p class="font-sans font-normal text-sm sm:text-base md:text-lg leading-relaxed sm:leading-[27px] tracking-[-0.3px] max-w-[746px] text-off-white/95">
-                Insights, guides, and stories from the world of prestige car hire — curated for those who expect the extraordinary.
+                Dive into the world of luxury car hire, prestige vehicles and elite automotive experiences. Our blog brings
+                you closer to cars, culture and a lifestyle that defines true sophistication down the road.
             </p>
         </div>
     </x-public.hero-section>

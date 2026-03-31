@@ -79,11 +79,11 @@ new #[Layout('layouts.public')] class extends Component
             ],
             [
                 'title' => 'Elite Chauffeur Service',
-                'body' => 'From your first inquiry when you hand back the keys, our round-the-clock personal service is a hallmark of our brand, providing you with true VIP treatment.',
+                'body' => 'Sit back and relax as our professional chauffeur services take the wheel and drive you to your destination in luxury.',
             ],
             [
                 'title' => 'Tailored Luxury Car Rentals',
-                'body' => 'From your first inquiry when you hand back the keys, our round-the-clock personal service is a hallmark of our brand, providing you with true VIP treatment.',
+                'body' => 'Whether you want to make a statement or simply enjoy the thrill of driving a luxury vehicle, we tailor our bespoke packages to your needs.',
             ],
         ];
     @endphp

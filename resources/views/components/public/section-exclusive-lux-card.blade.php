@@ -3,22 +3,22 @@ $fleetShowcaseCards = [
     [
         'image' => 'placeholder-image-1.webp',
         'title' => 'Super Car Hire',
-        'body' => 'Experience the world\'s most exhilarating drives with iconic Ferrari, Lamborghini and McLaren.',
+        'body' => 'Experience the world’s most exhilarating drives with iconic Ferrari, Lamborghini and McLaren.',
     ],
     [
         'image' => 'placeholder-image-2.webp',
         'title' => 'Prestige Sedan Hire',
-        'body' => null,
+        'body' => 'Refine comfort and command presence with stunning Rolls-Royce, Bentleys and Mercedes-Benz.',
     ],
     [
         'image' => 'placeholder-image-3.webp',
         'title' => 'Luxury SUV Hire',
-        'body' => null,
+        'body' => 'Combine luxurious elegance and efficiency with Range Rover, Porsche Cayenne and BMW X7.',
     ],
     [
         'image' => 'placeholder-image-4.webp',
         'title' => 'Sports Car Hire',
-        'body' => null,
+        'body' => 'For those who appreciate pure performance, drive away in a thrilling Porsche 911, Aston Martin or Audi R8.',
     ],
 ];
 @endphp
